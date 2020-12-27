@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+
+  <div>
+    <!-- Login -->
+    <div id="loginCard" class="card">
+      <div class="login-container">
+        <h2 class="header">deVote</h2>
+        <div>
+          <div class="login-warning">
+            <span class="warning">
+              User credentials are missing or no wallet is used, please check that have set both of them.
+            </span>
+          </div>
+        </div>
+        <div>
+          <button id="cred-btn" class="dark-btn">Insert Username & Token</button>
+          <button id="wallet-btn" class="dark-btn">Generate Wallet</button>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Main Menu ------------------------------------------>
+
+    <div id="menuCard" class="card">
+      <div class="menu-container">
+        <div class="header-container header-container-fixed">
+          <div>
+            <img src="./assets/menu.png">
+          </div>
+          <div>
+            <h2 class="header">Menu</h2>
+          </div>
+        </div>
+
+        <div>
+          <div id="gotoRepoBtn" class="dark-btn">
+            <span>Repositories</span>
+          </div>
+        </div>
+
+        <div class="filler"></div>
+
+        <div>
+          <div id="gotoWalletBtn" class="dark-btn">
+            <span>Wallet</span>
+          </div>
+          <div id="gotoCredBtn" class="dark-btn">
+            <span>Username and GitHub-Token</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!------------------------------------------ Repository List ------------------------------------------>
+
+    <div id="repoCard" class="card">
+      <div class="repository-container">
+
+        <div class="header-container header-container-fixed">
+          <div>
+            <img src="./assets/repository.png">
+          </div>
+          <div>
+            <h2 class="header">Repositories</h2>
+          </div>
+        </div>
+
+        <div id="repoList" class="repository-list">
+
+        </div>
+        <div>
+          <div class="dark-btn backBtn">
+            <span>Back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Polls List ------------------------------------------>
+
+    <!-- Polls Requests -->
+    <div id="pollsCard" class="card">
+      <div class="poll-container">
+
+        <div class="header-container header-container-variable">
+          <div>
+            <img src="./assets/poll.png">
+          </div>
+          <div>
+            <h2 id="pollsHeader" class="header"></h2>
+          </div>
+        </div>
+
+        <div id="pollsList" class="poll-list"></div>
+
+        <div>
+          <div id="showPollsBtn" class="dark-btn show-polls-btn">
+            <span>
+              Show pollable pull-requests
+            </span>
+            <div>
+              0
+            </div>
+          </div>
+
+          <div id="showMergeBtn" class="dark-btn show-polls-btn">
+            <span>
+              Show mergeable pull-requests
+            </span>
+            <div>
+              0
+            </div>
+          </div>
+
+          <div class="dark-btn backBtn">
+            <span>
+              Back
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Pollable List ------------------------------------------>
+
+    <div id="pullCard" class="card">
+      <div class="pollable-container">
+
+        <div class="header-container header-container-variable">
+          <div>
+            <img src="./assets/pollable.png">
+          </div>
+          <div>
+            <h2 id="pollableHeader" class="header">Pollable Requests</h2>
+          </div>
+        </div>
+
+        <div id="pullList" class="pollable-list">
+
+        </div>
+        <div>
+          <div class="dark-btn backBtn">
+            <span>Back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!------------------------------------------ Pollable List ------------------------------------------>
+
+        <div id="mergeCard" class="card">
+          <div class="mergeable-container">
+    
+            <div class="header-container header-container-variable">
+              <div>
+                <img src="./assets/github.png">
+              </div>
+              <div>
+                <h2 id="mergeableHeader" class="header">Mergeable Requests</h2>
+              </div>
+            </div>
+    
+            <div id="mergeList" class="mergeable-list">
+    
+            </div>
+            <div>
+              <div class="dark-btn backBtn">
+                <span>Back</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!------------------------------------------ Wallet ------------------------------------------>
+
+    <div id="walletCard" class="card">
+      <div class="wallet-container">
+        <h2 class="header">Wallet</h2>
+        <div>
+          <button id="btn-gen-keys" class="dark-btn">Generate keys</button>
+        </div>
+        <div>
+          <div class="wallet-key-holder">
+            <span class="wallet-desc">Balance: </span>
+            <span id="account-balance"></span>
+          </div>
+          <div class="wallet-key-holder">
+            <span class="wallet-desc">Public key:</span>
+            <span id="public-key"></span>
+          </div>
+          <div class="wallet-key-holder">
+            <span class="wallet-desc">Private key:</span>
+            <span id="private-key"></span>
+          </div>
+          <div class="warning-holder">
+            <span class="warning">
+              Warning: Do not share your private key with anyone, otherwise you could lose your wallet!
+            </span>
+          </div>
+        </div>
+        <div>
+          <button class="backBtn dark-btn">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Credentials ------------------------------------------>
+
+    <div id="credCard" class="card">
+      <div class="credentials-container">
+        <h2 class="header">User credentials</h2>
+        <div>
+          <div class="cred-holder">
+            <span class="wallet-desc">Username:</span>
+            <input id="cred-username"></span>
+          </div>
+          <div class="cred-holder">
+            <span class="wallet-desc">GitHub-Token:</span>
+            <input id="cred-token"></span>
+          </div>
+        </div>
+        <div>
+          <button id="save-btn" class="dark-btn">Save</button>
+          <button class="backBtn dark-btn">Back</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="overlay card" id="overlay">
+      <span>Loading data...</span>
+    </div>
+
+
+  </div>
+
+
+  <script src="web3.min.js"> </script>
+  <script src="helper.js"></script>
+  <script src="contract.js"></script>
+  <script src="github.js"></script>
+  <script src="blockchain.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>

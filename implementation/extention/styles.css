@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+}
+
+.header-container-fixed {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+}
+
+.header-container-variable {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+}
+
+.header {
+    color: #24292e;
+    font-size: 20px;
+    float: left;
+    margin-left: 20px;
+}
+
+.header-container > div > img {
+    height: 25px;
+    width: 25px;
+    float: right;
+    display: block;
+    padding-top: 17px;
+}
+
+span {
+    font-family: "Roboto";
+}
+
+.warning {
+    color: #f88859;
+}
+
+.dark-btn {
+    background: #24292e;
+    color: white;
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+    height: 45px;
+    font-weight: 200;
+    border-radius: 7.5px;
+}
+
+.show-polls-btn {
+    display: grid !important;
+    grid-template-columns: 80% 1fr;
+}
+
+.show-polls-btn > div {
+    border-radius: 50%;
+    background: #e11f1f;
+    width: 60%;
+    height: 50%;
+    padding-top: 8px;
+    margin-top: 6px;
+    display: block;
+}
+
+.dark-btn > span {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+/* ------------------------ LOGIN CONTEXT ---------------------------- */
+
+.login-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 1fr 30%;
+}
+
+.login-warning {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 35px auto;
+    word-wrap: break-word;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+/* ------------------------ MENU CONTEXT ---------------------------- */
+
+.menu-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 15% 1fr;
+}
+
+/* ------------------------ REPOSITORY CONTEXT ---------------------------- */
+
+.repository-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12.5% 1fr 15%;
+}
+
+.repository-list {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.repository-element {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background: #24292e;
+    color: white;
+    width: 80%;
+    height: 40px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.repository-element > span {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 12px;
+}
+
+.repository-element > div {
+    border-radius: 50%;
+    background: #e11f1f;
+    width: 60%;
+    height: 55%;
+    padding-top: 9px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* ------------------------ POLL CONTEXT ---------------------------- */
+
+.poll-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 1fr 30%;
+}
+
+.poll-list {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.poll-element {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 1fr;
+    background: #24292e;
+    color: white;
+    width: 90%;
+    height: 60px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.poll-date {
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: left;
+    display: block;
+    padding-left: 20px;
+    color: #ff6464;
+}
+
+.poll-date > span {
+    display: block;
+    padding-top: 2.5px;
+}
+
+.poll-name {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.poll-name > span {
+    display: block;
+    padding-top: 7.5px;
+}
+
+.poll-buttons {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+
+.poll-buttons > div {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.poll-buttons > div > img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 7px;
+}
+
+.poll-voting {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    row-gap: 5px;
+}
+
+.poll-voting > div {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.poll-voting > div > img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 7px;
+}
+
+.poll-voting > input {
+    height: 60%;
+    width: 80%;
+    margin: 4px auto;
+}
+
+.accept-button {
+    background: #4aec2f;
+    color: white;
+}
+
+.decline-button {
+    background: #e11f1f;
+    color: white;
+}
+
+.link-button {
+    background: #999e98;
+    color: white;
+}
+
+/* ------------------------ Pollable CONTEXT ---------------------------- */
+
+.pollable-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 1fr 20%;
+}
+
+.pollable-list {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.pollable-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #24292e;
+    color: white;
+    width: 90%;
+    height: 60px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.pollable-element > div > span {
+    display: block;
+    padding-top: 20px;
+}
+
+.pollable-element > div > div {
+    width: 70%;
+    height: 50%;
+    margin: 15px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.pollable-element > div > div > span {
+    display: block;
+    padding-top: 7.5px;
+}
+
+/* ------------------------ Mergeable CONTEXT ---------------------------- */
+
+.mergeable-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 1fr 20%;
+}
+
+.mergeable-list {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.mergeable-element {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 1fr 1fr;
+    background: #24292e;
+    color: white;
+    width: 90%;
+    height: 60px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.mergeable-element > div > .mergeable-stats {
+    grid-area: 1 / 1 / 2 / 2;
+    display: block;
+    padding-top: 5px;
+}
+
+.mergeable-element > div > .mergeable-name {
+    grid-area: 2 / 1 / 3 / 2;
+    display: block;
+    padding-top: 5px;
+}
+
+.mergeable-element > div > .pro-merge {
+    color: #4aec2f;
+}
+
+.mergeable-element > div > .contra-merge {
+    color: #e11f1f;
+}
+
+.mergeable-element > .mergeable-button {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.mergeable-element > .mergeable-button > div {
+    width: 70%;
+    height: 50%;
+    margin: 15px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.mergeable-element > .mergeable-button > div > span {
+    display: block;
+    padding-top: 7.5px;
+}
+
+/* ------------------------ Wallet CONTEXT ---------------------------- */
+
+.wallet-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 20% 1fr 12.5%;
+}
+
+.wallet-key-holder {
+    width: 90%;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    margin: 10px auto;
+    word-wrap: break-word;
+}
+
+.wallet-key-holder > span {
+    max-width: 250px;
+}
+
+.wallet-desc {
+    font-weight: bold;
+}
+
+.wallet-key-holder > span {
+    color: #24292e;
+}
+
+.warning-holder {
+    width: 90%;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ------------------------ credentials CONTEXT ---------------------------- */
+
+.credentials-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 1fr 30%;
+}
+
+.cred-holder {
+    width: 90%;
+    height: 75px;
+    display: grid;
+    grid-template-rows: 1fr 50%;
+    margin: 25px auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay > span {
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding-top: 40%;
+}
+
+.card {
+    display: none;
+}
+
+
+

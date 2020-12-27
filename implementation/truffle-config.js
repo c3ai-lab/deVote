@@ -46,7 +46,7 @@ module.exports = {
           "https://sokol.poa.network")
       },
       network_id: 77,
-      gas: 500000,
+      gas: 4612388,
       gasPrice: 1000000000
     },
     development: {
@@ -56,7 +56,7 @@ module.exports = {
           "https://sokol.poa.network")
       },
       network_id: 77,
-      gas: 500000,
+      gas: 4612388,
       gasPrice: 1000000000
     }
     // Useful for testing. The `development` name is special - truffle uses it by default
