@@ -14,7 +14,7 @@ function mergePullRequest(url, sha) {
         method: 'PUT',
         headers: new Headers({
             'User-agent': 'Mozilla/4.0 Custom User Agent',
-            "Authorization": "Bearer " + github_token,
+            "Authorization": "Bearer " + document.getElementById('cred-token').value,
         }),
         body: JSON.stringify({
             "sha": sha,
@@ -31,7 +31,7 @@ function rejectPullRequest(url) {
         method: 'PATCH',
         headers: new Headers({
             'User-agent': 'Mozilla/4.0 Custom User Agent',
-            "Authorization": "Bearer " + github_token,
+            "Authorization": "Bearer " + document.getElementById('cred-token').value,
         }),
         body: JSON.stringify({
             "state": "closed"

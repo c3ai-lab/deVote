@@ -64,7 +64,7 @@ function valideSyncStorageKey(list) {
                             : document.getElementById(list[i].id).value = data[list[i].key];
                         resolve();
                     } else {
-                        reject();
+                        resolve();
                     }
                 });
             });

@@ -1,3 +1,6 @@
+var manager_contract_abi = [{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"constant":true,"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"polls","outputs":[{"internalType":"uint256","name":"id","type":"uint256"},{"internalType":"uint256","name":"rpId","type":"uint256"},{"internalType":"uint256","name":"pqId","type":"uint256"},{"internalType":"string","name":"poll_contract_address","type":"string"},{"internalType":"bool","name":"open","type":"bool"},{"internalType":"string","name":"timestamp","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"_rpId","type":"uint256"},{"internalType":"uint256","name":"_pqId","type":"uint256"},{"internalType":"string","name":"addr","type":"string"},{"internalType":"string","name":"_timestamp","type":"string"}],"name":"addPoll","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"closePoll","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getPollsLength","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"helloWorld","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"pure","type":"function"}];
+var poll_contract_abi = [{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"constant":true,"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"votes","outputs":[{"internalType":"uint256","name":"id","type":"uint256"},{"internalType":"bool","name":"decision","type":"bool"},{"internalType":"address payable","name":"delegate","type":"address"},{"internalType":"uint256","name":"weight","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"bool","name":"desc","type":"bool"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"address payable","name":"addr","type":"address"}],"name":"vote","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"uint256","name":"stake","type":"uint256"}],"name":"transferStakes","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getVotesLength","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}];
+
 var contract_abi = [
     {
       "inputs": [],
@@ -304,7 +307,3 @@ var contract_abi = [
       "type": "function"
     }
   ];
-
-function getContractAbi() {
-    return contract_abi;
-}

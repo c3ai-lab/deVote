@@ -15,13 +15,12 @@
         <div>
           <div class="login-warning">
             <span class="warning">
-              User credentials are missing or no wallet is used, please check that have set both of them.
+              Please sign in with your GitHub account to use this service.
             </span>
           </div>
         </div>
         <div>
-          <button id="cred-btn" class="dark-btn">Insert Username & Token</button>
-          <button id="wallet-btn" class="dark-btn">Generate Wallet</button>
+          <button id="github-btn" class="dark-btn">Sign in</button>
         </div>
       </div>
     </div>
@@ -52,7 +51,7 @@
             <span>Wallet</span>
           </div>
           <div id="gotoCredBtn" class="dark-btn">
-            <span>Username and GitHub-Token</span>
+            <span>GitHub Developer Token</span>
           </div>
         </div>
       </div>
@@ -221,10 +220,6 @@
         <h2 class="header">User credentials</h2>
         <div>
           <div class="cred-holder">
-            <span class="wallet-desc">Username:</span>
-            <input id="cred-username"></span>
-          </div>
-          <div class="cred-holder">
             <span class="wallet-desc">GitHub-Token:</span>
             <input id="cred-token"></span>
           </div>
@@ -251,6 +246,7 @@
   <script src="github.js"></script>
   <script src="blockchain.js"></script>
   <script src="popup.js"></script>
+  <script src="tab.js"></script>
 </body>
 
 </html>

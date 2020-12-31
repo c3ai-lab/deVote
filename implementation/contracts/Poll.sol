@@ -1,7 +1,6 @@
 pragma solidity >=0.4.22 <0.8.0;
 
 contract Poll {
-
     struct Vote {
         uint256 id;
         bool decision;
@@ -16,13 +15,17 @@ contract Poll {
             Vote({
                 id: 0,
                 decision: true,
-                delegate: 0x22A5206a65Aaf639C4d446F29586F0c00e0F7Fa9,
+                delegate: 0x28CfbA097FF9bb9D904471c493b032Df45B9f953,
                 weight: 0
             })
         );
     }
 
-    function vote(bool desc, uint256 value, address payable addr) public payable  {
+    function vote(
+        bool desc,
+        uint256 value,
+        address payable addr
+    ) public payable {
         votes.push(
             Vote({
                 id: votes.length,
@@ -33,8 +36,8 @@ contract Poll {
         );
     }
 
-    function resolve() public payable {
-        votes[1].delegate.transfer(10000000000000000);  
+    function transferStakes(uint256 index, uint256 stake) public payable {
+        votes[index].delegate.transfer(stake);
     }
 
     function getVotesLength() public view returns (uint256) {

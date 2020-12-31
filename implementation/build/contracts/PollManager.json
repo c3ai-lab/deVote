@@ -2544,12 +2544,12 @@
     "77": {
       "events": {},
       "links": {},
-      "address": "0xB3590D2DFb1a3b576D3A7a1F34C258792578E2A3",
-      "transactionHash": "0x4954f8730c23244cb14d794e31b73fb82f4d67f8b542765681a18c11b777984e"
+      "address": "0xFf2cCF705A3083E302BF8fc9Edb86980AD0687dc",
+      "transactionHash": "0x77c6be260ed2711a898c1cc6ad19e16bba5551194be538823523c30c08f9542a"
     }
   },
   "schemaVersion": "3.2.4",
-  "updatedAt": "2020-12-27T17:12:36.175Z",
+  "updatedAt": "2020-12-31T11:55:06.344Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
