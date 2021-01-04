@@ -14,6 +14,12 @@ A detailed documentation about deVote its functionalities, workflows and states 
 
 The browser extension is under *implementation/extension*. You can add them to the chrome browser by going to the Extensions settings, clicking on *"Load unzipped extension"* in the upper left corner and selecting the path in the Explorer/Finder. You can find more information at [Install and manage extensions](https://support.google.com/chrome_webstore/answer/2664769?hl=en).
 
+### GitHub OAuth
+
+deVote uses GitHub OAuth to authenticate a GitHub account. In order to use GitHub's OAuth, the app must be registered under your own account. The procedure for this process can be found under [GitHub OAuth Documentation](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps).
+After the registration of the app you will get the a client_id and client_secret. Copy them and update the variables *client_id* and *client_secret* with your app properties. After this you need to update the *Callback URL* in the settings of your GitHub-App. The *Callback URL* should have the following structure
+*https://[EXTENSION-ID].chromiumapp.org/provider_cb*. **This is only for testing purpose, you should not reveal your client_id and client_secret! One option would be to use something like a nodeJS service, that holds this sensible information and has an endpoint (REST) that redirects to the Callback-URL.
+
 ### Smart contract
 
 As described in the chapter *Architecture*, there are two different types smart contracts that deVote uses. There is one parent contract (manager contract) and several child contracts (poll contracts). The manager contract must be created manually once and the poll contracts are published by deVote. The process of publishing the manager contract and the necessary configuration for the poll contracts are explained below.
@@ -61,7 +67,7 @@ truffle migrate --reset
 * Switch in the directory *implementation/contracts* and run the command to extract the bytecode:
 
 ```shell
-node solidity_poll.js
+node solidity_poll.js 
 ```
 
 * The console should then print out the bytecode of the contract
@@ -85,3 +91,4 @@ In addition to [@sebastiangajek´s](https://github.com/sebastiangajek) help and 
 * [POA - Part 1 - Develop and deploy a smart contract](https://kauri.io/#article/549b50d2318741dbba209110bb9e350e)
 * [Using Web3.js to Deploy Smart Contracts on Moonbeam](https://docs.moonbeam.network/getting-started/local-node/web3-js/web3-contract/)
 * [Install and manage extensions](https://support.google.com/chrome_webstore/answer/2664769?hl=en)
+* [GitHub OAuth](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps)
