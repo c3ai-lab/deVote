@@ -20,7 +20,7 @@ Important system requirements are:
 * [NodeJS](https://nodejs.org/) - JavaScript runtime for the npm packages
 * [truffle](https://github.com/trufflesuite/truffle) - development environment framework for Ethereum
 
-The following steps will explain how the manager contract can be deployed and how the bytecode for the poll contracts can be extracted. The extracted bytecode is required for 
+The following steps will explain how the manager contract can be deployed and how the bytecode for the poll contracts can be extracted. The extracted bytecode is required for deployment of the poll contract through deVote. If the solidity smart contract changes the bytecode needs to be updated.
 
 
 ## Credits and Lecture
