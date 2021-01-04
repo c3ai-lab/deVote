@@ -2,13 +2,13 @@
 
 deVote is a browser extension for decentralised voting of pull requests in GitHub repositories. For the decentralisation of the voting mechanism, smart contracts are used, which run on the Ethereum blockchain or an Ethereum testnet. This project was developed as part of the university course *"Kryptographie und Systemsicherheit"* at the [University of Flensburg](https://hs-flensburg.de/).
 
-## Architecture
-
-## Deployment
-
 ## Documentation
 
 A detailed documentation about deVote its functionalities, workflows and states can be found under the *Wiki*-Tab. It is highly suggested to read it before any development to understand the current state of the application.
+
+## Architecture
+
+## Deployment
 
 #### Browser extension
 
