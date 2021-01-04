@@ -8,6 +8,12 @@ deVote is a browser extension for decentralised voting of pull requests in GitHu
 
 ## Documentation
 
+#### Browser extension
+
+#### Smart contract
+
+As described in the chapter *Architecture*, there are two different types smart contracts that deVote uses. There is one parent contract (manager contract) and several child contracts (poll contracts). The manager contract must be created manually once and the poll contracts are published by deVote. The process of publishing the manager contract and the necessary configuration for the poll contracts are explained below.
+
 ## Credits and Lecture
 
 In addition to [@sebastiangajek](https://github.com/sebastiangajek) help and support, the following resources helped us a lot to realise this project.
