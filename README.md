@@ -8,11 +8,20 @@ deVote is a browser extension for decentralised voting of pull requests in GitHu
 
 ## Documentation
 
+A detailed documentation about deVote its functionalities, workflows and states can be found under the *Wiki*-Tab. It is highly suggested to read it before any development to understand the current state of the application.
+
 #### Browser extension
 
 #### Smart contract
 
 As described in the chapter *Architecture*, there are two different types smart contracts that deVote uses. There is one parent contract (manager contract) and several child contracts (poll contracts). The manager contract must be created manually once and the poll contracts are published by deVote. The process of publishing the manager contract and the necessary configuration for the poll contracts are explained below.
+
+Important system requirements are:
+* [NodeJS](https://nodejs.org/) - JavaScript runtime for the npm packages
+* [truffle](https://github.com/trufflesuite/truffle) - development environment framework for Ethereum
+
+The following steps will explain how the manager contract can be deployed and how the bytecode for the poll contracts can be extracted. The extracted bytecode is required for 
+
 
 ## Credits and Lecture
 
