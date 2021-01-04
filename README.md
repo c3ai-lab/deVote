@@ -8,7 +8,7 @@ A detailed documentation about deVote its functionalities, workflows and states 
 
 ## Architecture
 
-## Get started
+## Development
 
 #### Browser extension
 
