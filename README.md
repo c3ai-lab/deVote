@@ -91,4 +91,4 @@ In addition to [@sebastiangajek´s](https://github.com/sebastiangajek) help and 
 * [POA - Part 1 - Develop and deploy a smart contract](https://kauri.io/#article/549b50d2318741dbba209110bb9e350e)
 * [Using Web3.js to Deploy Smart Contracts on Moonbeam](https://docs.moonbeam.network/getting-started/local-node/web3-js/web3-contract/)
 * [Install and manage extensions](https://support.google.com/chrome_webstore/answer/2664769?hl=en)
-* [GitHub OAuth](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps)
+* [Managing OAuth Apps](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps)
