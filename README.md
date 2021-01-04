@@ -56,7 +56,7 @@ truffle migrate --reset
 
 **Extract poll contract bytedcode**
 
-* Switch in the directory *implementation\contracts* and run the command to extract the bytecode:
+* Switch in the directory *implementation/contracts* and run the command to extract the bytecode:
 
 ```shell
 node solidity_poll.js
@@ -72,8 +72,8 @@ node solidity_poll.js
 
 **Update the contract json(s)**
 
-* The *web3.js* package requires the contract json(s) of the manager- and poll contract to interact with them. The json(s) are basically an interface for the package to know what functions the contracts have. Just copy the *abi* attribute out of *implementation\build\contracts\PollManager.json* and print it into
-the variable *manager_contract_abi* in contract.js. The same applies for *implementation\build\contracts\Poll.json* and *poll_contract_abi*.
+* The *web3.js* package requires the contract json(s) of the manager- and poll contract to interact with them. The json(s) are basically an interface for the package to know what functions the contracts have. Just copy the *abi* attribute out of *implementation/build/contracts/PollManager.json* and print it into
+the variable *manager_contract_abi* in contract.js. The same applies for *implementation/build/contracts/Poll.json* and *poll_contract_abi*.
 
 
 ## Credits and Lecture
