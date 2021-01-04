@@ -1,4 +1,4 @@
-## Github Pull-Request voting on a blockchain
+## deVote - blockchain based voting system for pull requests
 
-This repository contains a collection of proof of concepts for the implementation of a voting system on a blockchain for Github repository pull requests. 
+This repository contains an implementation of a blockchain based voting systen for GitHub repository pull requests.
 The concepts were developed as part of the university course *"Kryptographie und Systemsicherheit"* at the [University of Flensburg](https://hs-flensburg.de/).
