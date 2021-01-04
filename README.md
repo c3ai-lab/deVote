@@ -25,7 +25,7 @@ The following steps will explain how the manager contract can be deployed and ho
 
 ## Credits and Lecture
 
-In addition to [@sebastiangajek](https://github.com/sebastiangajek) help and support, the following resources helped us a lot to realise this project.
+In addition to [@sebastiangajek´s](https://github.com/sebastiangajek) help and support, the following resources helped us a lot to realise this project.
 
 * [POA - Part 1 - Develop and deploy a smart contract](https://kauri.io/#article/549b50d2318741dbba209110bb9e350e)
 * [Using Web3.js to Deploy Smart Contracts on Moonbeam](https://docs.moonbeam.network/getting-started/local-node/web3-js/web3-contract/)
