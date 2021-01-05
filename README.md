@@ -1,6 +1,6 @@
-## deVote - blockchain based voting system for pull requests
+## deVote - blockchain-based voting system for pull requests
 
-deVote is a browser extension for decentralised voting of pull requests in GitHub repositories. For the decentralisation of the voting mechanism, smart contracts are used, which run on the Ethereum blockchain or an Ethereum testnet. This project was developed as part of the university course *"Kryptographie und Systemsicherheit"* at the [University of Flensburg](https://hs-flensburg.de/).
+deVote is a browser extension for decentralized voting of pull requests in GitHub repositories. For the decentralization of the voting mechanism, smart contracts are used, which run on the Ethereum blockchain or an Ethereum test net. This project was developed as part of the university course *"Kryptographie und Systemsicherheit"* at the [University of Flensburg](https://hs-flensburg.de/).
 
 ## Documentation
 
@@ -22,13 +22,13 @@ The browser extension is under *implementation/extension*. You can add them to t
 ### GitHub OAuth
 
 deVote uses GitHub OAuth to authenticate a GitHub account. In order to use GitHub's OAuth, the app must be registered under your own account. The procedure for this process can be found under [GitHub OAuth Documentation](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps).
-After the registration of the app you will get the a client_id and client_secret. Copy them and update the variables *client_id* and *client_secret* with your app properties. After this you need to update the *Callback URL* in the settings of your GitHub-App. The *Callback URL* should have the following structure
+After the registration of the app, you will get the client_id and client_secret. Copy them and update the variables *client_id* and *client_secret* with your app properties. After this, you need to update the *Callback URL* in the settings of your GitHub-App. The *Callback URL* should have the following structure
 *https://[EXTENSION-ID].chromiumapp.org/provider_cb*. **This is only for testing purpose, you should not reveal your client_id and client_secret! One option would be to use something like a nodeJS service, that holds this sensible information and has an endpoint (REST) that redirects to the Callback-URL.
 
 ### Smart contract
 
-As described in the chapter *Architecture*, there are two different types smart contracts that deVote uses. There is one parent contract (manager contract) and several child contracts (poll contracts). The manager contract must be created manually once and the poll contracts are published by deVote. The process of publishing the manager contract and the necessary configuration for the poll contracts are explained below.
-**Important: This steps are only required to do, if you change anything in the solidity contracts!**
+As described in the chapter *Architecture*, there are two different types of smart contracts that deVote uses. There is one parent contract (manager contract) and several child contracts (poll contracts). The manager contract must be created manually once and the poll contracts are published by deVote. The process of publishing the manager contract and the necessary configuration for the poll contracts are explained below.
+**Important: These steps are only required to do if you change anything in the solidity contracts!**
 
 Important system requirements are:
 * [NodeJS](https://nodejs.org/) - JavaScript runtime for the npm packages
@@ -44,7 +44,7 @@ The following descriptions will explain how the manager contract can be deployed
 truffle migrate --reset
 ```
 
-* This will iniate the deployment process and after some time (1 - 2 minutes) the console should show the information about the deployed contract
+* This will initiate the deployment process and after some time (1 - 2 minutes) the console should show the information about the deployed contract
 
 ```solidity
 2_deploy_contracts.js
@@ -67,7 +67,7 @@ truffle migrate --reset
 
 * The row *contract address* is the address of the newly deployed contract. Copy it and update the variable *manager_contract_address* in *popup.js*.
 
-**Extract poll contract bytedcode**
+**Extract poll contract bytecode**
 
 * Switch in the directory *implementation/contracts* and run the command to extract the bytecode:
 
