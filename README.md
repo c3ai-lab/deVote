@@ -9,7 +9,7 @@ A detailed documentation about deVote its functionalities, workflows and states 
 ## Architecture
 
 <p align="center">
-  <img src="https://github.com/c3ai-lab/Pull-Request-Extension-Voting/blob/main/implementation/assets/deVote_architecture.png" width="600">  
+  <img src="https://github.com/c3ai-lab/Pull-Request-Extension-Voting/blob/main/implementation/assets/deVote_architecture.png" width="750">  
 </p>
 
 
