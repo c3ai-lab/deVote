@@ -49,6 +49,7 @@ span {
     height: 45px;
     font-weight: 200;
     border-radius: 7.5px;
+    padding:2px;
 }
 
 .show-polls-btn {
@@ -341,11 +342,19 @@ span {
     padding-top: 5px;
 }
 
-.mergeable-element > div > .pro-merge {
+/* .mergeable-element > div > .pro-merge {
     color: #4aec2f;
 }
 
 .mergeable-element > div > .contra-merge {
+    color: #e11f1f;
+} */
+
+.pro-merge {
+    color: #4aec2f;
+}
+
+ .contra-merge {
     color: #e11f1f;
 }
 

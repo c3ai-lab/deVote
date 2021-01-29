@@ -183,8 +183,11 @@ function resolvePoll(address, index, value, delegate) {
 function getWalletBalance(web3, public_key) {
     return new Promise(async (resolve, reject) => {
         try {
-            let balance = await web3.eth.getBalance(public_key);
-            resolve((parseInt(balance) / (10 ** 18)) + " ETH");
+            if(public_key) {
+                let balance = await web3.eth.getBalance(public_key);
+                resolve((parseInt(balance) / (10 ** 18)) + " ETH");
+            }
+            resolve("0 ETH");
         } catch (error) {
             reject(error);
         }
