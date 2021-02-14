@@ -1,0 +1,134 @@
+<nav class="page-header" [ngClass]="{'fixed-scroll-header': fixedHeader}">
+  <div></div>
+  <div>
+    <img class="deVote-icon" src="./assets/images/deVote_icon_blue.png" alt="deVote icon" *ngIf="!fixedHeader">
+    <img class="deVote-icon" src="./assets/images/deVote_icon_blue.png" alt="deVote icon" *ngIf="fixedHeader">
+  </div>
+  <div></div>
+  <div>
+    <img src="./assets/svgs/github.svg" alt="Github icon"
+      (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')" *ngIf="!fixedHeader">
+    <img src="./assets/svgs/github.svg" alt="Github icon"
+      (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')" *ngIf="fixedHeader">
+  </div>
+</nav>
+
+<div class="page-content">
+  <div class="deVote-container">
+    <div>
+      <div class="deVote-text-holder">
+        <span class="deVote-main-text">
+          Decentralised software development on GitHub
+        </span>
+        <span class="deVote-description">
+          An open source browser extension for the decentralized management of GitHub-Repositories on the ethereum
+          blockchain.
+        </span>
+        <div class="deVote-documentation-button"
+          (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting/wiki')">
+          <div>
+            <span>
+              Show documentation
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="deVote-screenshot" src="./assets/images/screenshot.png">
+  </div>
+
+  <div class="page-scroll-notifier">
+    <img src="./assets/svgs/down.svg" alt="Github icon">
+  </div>
+
+  <div class="page-deVote-features">
+    <div class="deVote-features-header">
+      <span>
+        deVote functionalities
+      </span>
+    </div>
+    <div class="deVote-features-body">
+
+      <div class="deVote-feature-element">
+        <img src="./assets/images/filler-image.png">
+
+        <div class="devote-feature-element-header">
+          <span>
+            Crowdfund issue solutions
+          </span>
+        </div>
+
+        <div class="devote-feature-element-body">
+          <span>
+            The community can crowdfund a bounty for the solving of an issue.
+          </span>
+        </div>
+      </div>
+
+      <div class="deVote-feature-element">
+        <img src="./assets/images/filler-image.png">
+
+        <div class="devote-feature-element-header">
+          <span>
+            Solve issues for a bounty
+          </span>
+        </div>
+
+        <div class="devote-feature-element-body">
+          <span>
+            A developer can solve an issue for a bounty if his solution is accepted by the community.
+          </span>
+        </div>
+      </div>
+
+      <div class="deVote-feature-element">
+        <img src="./assets/images/filler-image.png">
+
+        <div class="devote-feature-element-header">
+          <span>
+            Vote on pull-requests
+          </span>
+        </div>
+
+        <div class="devote-feature-element-body">
+          <span>
+            The can community votes whether a pull-request should be merged or not.
+          </span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="page-deVote-benefits">
+    <div class="deVote-benefits-header">
+      <span>
+        Advantages of using deVote
+      </span>
+    </div>
+    <div class="deVote-benefits-body">
+      <div class="deVote-benefits-column">
+        <div class="deVote-benefits-column-header">
+          <span>deVote</span>
+        </div>
+        <div class="deVote-benefits-column-element">
+          <div class="devote-benefits-element-image">
+
+          </div>
+          <div class="devote-benefits-element-header">
+            <span>Header</span>
+          </div>
+          <div class="devote-benefits-element-body">
+            <span>Body</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="deVote-benefits-column">
+
+      </div>
+    </div>
+  </div>
+
+</div>

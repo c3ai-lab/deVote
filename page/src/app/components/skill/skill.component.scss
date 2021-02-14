@@ -1,0 +1,39 @@
+.skill-container {
+    height: 140px;
+    width: 80px;
+    display: grid;
+    grid-template-rows: 70px 40%;
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+        width: 60px;
+        height: 60px;
+        margin: 5px auto;
+        display: block;
+
+        opacity: 0.6;
+        display: block;
+    }
+
+    span {
+        color: #093d8d;
+        opacity: 0.6;
+        font-family: "Montserrat", "Raleway", sans-serif;
+        display: block;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    &:hover {
+        img,
+        span {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+
+}

@@ -1,0 +1,147 @@
+.experience {
+    margin: 25px auto;
+    border-radius: 25px;
+    width: 60%;
+    height: 200px;
+    background: white;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 60px;
+    grid-template-columns: 20% 1fr;
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em, rgba(2, 8, 20, 0.08) 0px 0.085em 0.175em;
+
+    .experience-image {
+        grid-area: 1 / 1 / 4 / 2;
+
+        img {
+            width: 80%;
+            display: block;
+            margin: 15% auto;
+        }
+
+        .tacoss-img {
+            margin: 25% auto !important;
+        }
+    }
+
+    .experience-title {
+        grid-area: 1 / 2 / 2 / 3;
+        
+        span {
+            color: #093d8d;
+            text-align: center;
+            font-family: "Montserrat", "Raleway", sans-serif;
+            font-size: 22px;
+            padding-top: 30px;
+        }
+    }
+
+    .experience-description {
+        grid-area: 2 / 2 / 3 / 3;
+
+        span {
+            color: #73849A;
+            text-align: center;
+            font-family: "Montserrat", "Raleway", sans-serif;
+            font-size: 17px;
+        }
+    }
+
+    .experience-timeline {
+        grid-area: 3 / 2 / 4 / 3;
+
+        span {
+            color: #093d8d;
+            text-align: center;
+            font-family: "Montserrat", "Raleway", sans-serif;
+            font-size: 20px;
+        }
+    }
+
+    span {
+        padding-left: 30px;
+        display: block;
+    }
+}
+
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+    .experience {
+        .experience-image {
+    
+            img {
+                margin: 25% auto !important;
+            }
+    
+            .tacoss-img {
+                margin: 35% auto !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+    .experience {
+        .experience-image {
+            img {
+                margin: 30% auto !important;
+            }
+    
+            .tacoss-img {
+                margin: 40% auto !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .experience {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .experience {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+    .experience {
+        width: 95% !important;
+
+        .experience-image {
+            img {
+                margin: 65% auto !important;
+            }
+    
+            .tacoss-img {
+                margin: 85% auto !important;
+            }
+        }
+
+        .experience-title {            
+            span {
+                font-size: 18px;
+                padding-top: 15px;
+            }
+        }
+    
+        .experience-description {    
+            span {
+                font-size: 16px;
+            }
+        }
+    
+        .experience-timeline {    
+            span {
+                font-size: 16px;
+            }
+        }
+    
+        span {
+            padding-left: 30px;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.project-holder {
+    width: 425px;
+    height: 175px;
+    margin: 45px auto;
+    border-radius: 20px;
+    background: white;
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em, rgba(2, 8, 20, 0.08) 0px 0.085em 0.175em;
+    transition: box-shadow 150ms ease 0s, transform 150ms ease 0s, -webkit-box-shadow 150ms ease 0s, -webkit-transform 150ms ease 0s;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 60px 1fr;
+    cursor: pointer;
+
+    .project-icon {
+        grid-area: 1 / 1 / 2 / 2;
+
+        img {
+            opacity: 0.8;
+            height: 40px;
+            width: 40px;
+            margin: 10px auto;
+            display: block;
+        }
+    }
+
+    .project-name {
+        grid-area: 1 / 2 / 2 / 3;
+        color: #093d8d;
+        opacity: 0.8;
+        text-align: center;
+        font-family: "Montserrat", "Raleway", sans-serif;
+        font-size: 20px;
+    }
+
+    .project-description {
+        grid-area: 2 / 1 / 3 / 3;
+        color: #73849A;
+        text-align: center;
+        font-family: "Montserrat", "Raleway", sans-serif;
+        font-size: 15px;
+    }
+
+    div {
+        span {
+            padding-top: 20px;
+            display: block;
+        }
+    }
+
+    &:hover {
+        .project-name {
+            span {
+                color: #1890FF;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+    .test {
+        width: 380px;
+        height: 175px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .test {
+        width: 60% !important;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 40% 1fr;
+    }
+}
