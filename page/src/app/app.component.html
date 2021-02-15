@@ -1,15 +1,12 @@
 <nav class="page-header" [ngClass]="{'fixed-scroll-header': fixedHeader}">
   <div></div>
   <div>
-    <img class="deVote-icon" src="./assets/images/deVote_icon_blue.png" alt="deVote icon" *ngIf="!fixedHeader">
-    <img class="deVote-icon" src="./assets/images/deVote_icon_blue.png" alt="deVote icon" *ngIf="fixedHeader">
+    <img class="deVote-icon" src="./assets/images/deVote_icon_blue.png" alt="deVote icon">
   </div>
   <div></div>
   <div>
     <img src="./assets/svgs/github.svg" alt="Github icon"
       (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')" *ngIf="!fixedHeader">
-    <img src="./assets/svgs/github.svg" alt="Github icon"
-      (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')" *ngIf="fixedHeader">
   </div>
 </nav>
 
@@ -145,7 +142,8 @@
             <span>Qualitative merges</span>
           </div>
           <div class="deVote-benefits-element-body">
-            <span>Many people can participate in the voting and thus better validate whether a pull request meets the quality standard.</span>
+            <span>Many people can participate in the voting and thus better validate whether a pull request meets the
+              quality standard.</span>
           </div>
         </div>
 
@@ -156,7 +154,7 @@
           <div class="deVote-benefits-column-header">
             <span>Traditional</span>
           </div>
-  
+
           <div class="deVote-benefits-element">
             <div class="deVote-benefits-element-image">
               <img src="./assets/svgs/cross.svg" alt="Checkmark icon">
@@ -168,7 +166,7 @@
               <span>The admin decides which issue comes first and can therefore hold back development.</span>
             </div>
           </div>
-  
+
           <div class="deVote-benefits-element">
             <div class="deVote-benefits-element-image">
               <img src="./assets/svgs/cross.svg" alt="Checkmark icon">
@@ -177,10 +175,11 @@
               <span>Free developer dependent</span>
             </div>
             <div class="deVote-benefits-element-body">
-              <span>The repository must hope that developers will continue to develop the project in their spare time and for free.</span>
+              <span>The repository must hope that developers will continue to develop the project in their spare time
+                and for free.</span>
             </div>
           </div>
-  
+
           <div class="deVote-benefits-element">
             <div class="deVote-benefits-element-image">
               <img src="./assets/svgs/cross.svg" alt="Checkmark icon">
@@ -189,10 +188,11 @@
               <span>Pull-Requests bottleneck</span>
             </div>
             <div class="deVote-benefits-element-body">
-              <span>It doesn't matter what the community thinks about a pull request, in the end it's the admin alone who decides whether to merge it or not.</span>
+              <span>It doesn't matter what the community thinks about a pull request, in the end it's the admin alone
+                who decides whether to merge it or not.</span>
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
@@ -201,25 +201,66 @@
   <div class="page-deVote-integrate">
     <div class="page-deVote-integrate-header">
       <span>
-        Interested? Yes, you can use it for your projects.
+        Interested? Yes, you can use it for your projects!
       </span>
     </div>
     <div class="page-deVote-integrate-body">
       <span>
-        This project is completely public and opensource. For the extension to work correctly, it must be set up correctly.
+        This project is completely public and opensource. For the extension to work correctly, it must be set up
+        correctly.
       </span>
     </div>
     <div class="page-deVote-integrate-button">
       <div class="deVote-documentation-button"
-      (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')">
-      <div>
-        <span>
-          Get the extension
-        </span>
+        (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')">
+        <div>
+          <span>
+            Get the extension
+          </span>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 
+  <div class="page-deVote-footer">
+    
+    <div class="deVote-footer-logo">
+      <img class="deVote-icon" src="./assets/images/deVote_icon_blue.png" alt="deVote icon">
+    </div>
+        
+    <div></div>
+
+    <div class="deVote-footer-info">
+      <div class="deVote-footer-header">
+        <span>Resources</span>
+      </div>
+      <div class="deVote-footer-body">
+        <span (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting')">
+          GitHub
+        </span>
+        <span (click)="openLink('https://github.com/c3ai-lab/Pull-Request-Extension-Voting/wiki')">
+          Documentation
+        </span>
+      </div>
+    </div>
+
+    <div class="deVote-footer-info">
+      <div class="deVote-footer-header">
+        <span>Contact</span>
+      </div>
+      <div class="deVote-footer-body">
+        <span (click)="openLink('https://github.com/c3ai-lab')">
+          C³AI Laboratories
+        </span>
+        <span (click)="openLink('https://github.com/SerQuicky')">
+          SerQuicky (Developer)
+        </span>
+        <span (click)="openLink('https://github.com/LeviiOnGit')">
+          LeviiOnGit (Developer)
+        </span>
+      </div>
+    </div>
+
+  </div>
 
 </div>
