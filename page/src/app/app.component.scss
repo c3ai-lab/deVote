@@ -443,6 +443,28 @@
 ---------------------------------------------------------------- */
 
 @media (min-width: 1400px) and (max-width: 1500px) {
+
+    .page-content {
+        padding-top: 110px;
+        width: 100%;
+        height: 3000px;
+    }
+
+    .deVote-screenshot {
+        left: 900px !important;
+    }
+
+    .page-deVote-features {
+        width: 70%;
+    }
+
+    .page-deVote-benefits {
+        width: 70%;
+    }
+
+    .page-deVote-integrate {
+        width: 70%;
+    }
 }
 
 /* ----------------------------------------------------------------
@@ -452,6 +474,31 @@
 ---------------------------------------------------------------- */
 
 @media (min-width: 1280px) and (max-width: 1400px) {
+    .page-content {
+        padding-top: 110px;
+        width: 100%;
+        height: 2800px;
+    }
+
+    .deVote-screenshot {
+        left: 750px !important;
+    }
+
+    .page-deVote-features {
+        width: 85%;
+    }
+
+    .page-deVote-benefits {
+        width: 85%;
+    }
+
+    .page-deVote-integrate {
+        width: 70%;
+    }
+
+    .page-deVote-footer {
+        grid-template-columns: 25% 1fr 20% 20% !important;
+    }
 }
 
 /* ----------------------------------------------------------------
@@ -460,85 +507,27 @@
 
 ---------------------------------------------------------------- */
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
     .page-header {
-        grid-template-columns: 1fr 15% 15% 15% 15% 5%;
-
-        span {
-            font-size: 30px;
-            padding-top: 25px;
-        }
+        grid-template-columns: 7.5% 25% 1fr 25% 7.5%;
     }
 
-    .fixed-scroll-header {
-        height: 90px !important;
-    }
-
-    .deVote-container {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 30% 1fr !important;
-
-        span {
-            font-size: 18px;
-            text-align: center !important;
-        }
-
-        div {
-            .deVote-text-holder {
-                width: 100% !important;
-                padding-top: 15%;
-
-                .deVote-main-text {
-                    font-size: 55px;
-                }
-
-                .deVote-description {
-                    font-size: 35px;
-                }
-            }
-        }
-
-        img {
-            margin: 50px auto;
-            display: block;
-        }
-    }
-
-    .page-section-header {
-        .title {
-            font-size: 45px;
-            padding-left: 75px;
-        }
-
-        .description {
-            font-size: 25px;
-            padding-left: 125px;
-        }
-    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-height: 1024px) and (max-height: 1366px) and (orientation: portrait) {
     .page-header {
-        grid-template-columns: 1fr 17.5% 17.5% 17.5% 17.5% 5%;
-
-        span {
-            font-size: 25px;
-            padding-top: 25px;
-        }
-
-        img {
-            padding-top: 15px !important;
-        }
+        grid-template-columns: 5% 15% 50% 5%;
     }
 
     .fixed-scroll-header {
         height: 80px !important;
     }
 
+
     .deVote-container {
         grid-template-columns: 1fr !important;
         grid-template-rows: 30% 1fr !important;
-        height: calc(100vh - 150px) !important;
+        height: calc(100vh - 325px) !important;
 
         span {
             font-size: 18px;
@@ -547,73 +536,14 @@
 
         div {
             .deVote-text-holder {
-                width: 100% !important;
+                height: 250px;
+                width: 95% !important;
                 padding-top: 5%;
+                margin: 0 auto !important;
+                float: none;
 
                 .deVote-main-text {
-                    font-size: 55px;
-                }
-
-                .deVote-description {
                     font-size: 35px;
-                }
-            }
-        }
-
-        img {
-            margin: 50px auto;
-            display: block;
-            height: 250px;
-            width: 250px;
-        }
-    }
-
-    .page-section-header {
-        .title {
-            font-size: 30px;
-            padding-left: 75px;
-        }
-
-        .description {
-            font-size: 18px;
-            padding-left: 125px;
-        }
-    }
-}
-
-/* ----------------------------------------------------------------
-
-                        Mobile-Layouts
-
----------------------------------------------------------------- */
-
-@media only screen and (min-width: 414px) and (max-width: 768px) {
-    .page-header {
-        grid-template-columns: 1fr 20% 20% 20% 20% 5%;
-
-        span {
-            font-size: 16px;
-            padding-top: 25px;
-        }
-    }
-
-    .deVote-container {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 30% 1fr !important;
-        height: calc(100vh - 150px) !important;
-
-        span {
-            font-size: 18px;
-            text-align: center !important;
-        }
-
-        div {
-            .deVote-text-holder {
-                width: 100% !important;
-                padding-top: 5%;
-
-                .deVote-main-text {
-                    font-size: 55px;
                 }
 
                 .deVote-description {
@@ -622,38 +552,178 @@
             }
         }
 
-        img {
-            margin: 50px auto;
-            display: block;
-            height: 250px;
-            width: 250px;
+        .deVote-screenshot {
+            left: 375px !important;
+            top: 500px !important;
         }
     }
 
-    .page-skills-container {
-        height: 1100px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+    .page-deVote-features {
+        width: 95%;
+    }
+
+    .page-deVote-benefits {
+        width: 95%;
+    }
+
+    .page-deVote-integrate {
+        width: 95%;
+        margin: 250px auto;
+    }
+
+    .page-deVote-footer {
+        height: 350px;
+    }
+
+    .page-deVote-footer {
+        grid-template-columns: 25% 1fr 20% 20% !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .page-content {
+        height: 2800px;
+    }
+
+    .page-header {
+        grid-template-columns: 5% 15% 55% 5%;
+    }
+
+    .fixed-scroll-header {
+        height: 80px !important;
+    }
+
+
+    .deVote-container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 30% 1fr !important;
+        height: calc(100vh + 125px) !important;
+
+        span {
+            font-size: 18px;
+            text-align: center !important;
+        }
 
         div {
-            width: 100%;
-            margin: 25px auto;
+            .deVote-text-holder {
+                height: 250px;
+                width: 95% !important;
+                padding-top: 5%;
+                margin: 0 auto !important;
+                float: none;
+
+                .deVote-main-text {
+                    font-size: 35px;
+                }
+
+                .deVote-description {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .deVote-screenshot {
+            left: 375px !important;
+            top: 500px !important;
         }
     }
 
-    .page-section-header {
-        .title {
-            font-size: 22px;
-            padding-left: 25px;
+    .page-deVote-features {
+        width: 95%;
+    }
+
+    .page-deVote-benefits {
+        width: 95%;
+    }
+
+    .page-deVote-integrate {
+        width: 95%;
+        margin: 250px auto;
+    }
+
+    .page-deVote-footer {
+        height: 200px;
+    }
+
+    .page-deVote-footer {
+        grid-template-columns: 25% 1fr 20% 20% !important;
+    }
+
+
+}
+
+/* ----------------------------------------------------------------
+
+                        Mobile-Layouts
+
+---------------------------------------------------------------- */
+
+@media only screen and (min-width: 414px) and (max-width: 768px) and (orientation: portrait) {
+    
+    .page-content {
+        height: 2800px;
+    }
+
+    .page-header {
+        grid-template-columns: 5% 15% 60% 5%;
+    }
+
+
+    .deVote-container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 30% 1fr !important;
+        height: calc(100vh + 125px) !important;
+        width: 100%;
+
+        span {
+            font-size: 18px;
+            text-align: center !important;
         }
 
-        .description {
-            font-size: 14px;
-            padding-left: 40px;
+        div {
+            .deVote-text-holder {
+                height: 250px;
+                width: 95% !important;
+                padding-top: 5%;
+                margin: 0 auto !important;
+                float: none;
+
+                .deVote-main-text {
+                    font-size: 30px;
+                }
+
+                .deVote-description {
+                    font-size: 20px;
+                }
+            }
         }
 
-        hr {
-            padding-left: 0px !important;
+        .deVote-screenshot {
+            left: 375px !important;
+            top: 500px !important;
         }
+    }
+
+    .page-deVote-features {
+        width: 95%;
+    }
+
+    .page-deVote-benefits {
+        width: 95%;
+    }
+
+    .page-deVote-integrate {
+        width: 95%;
+        margin: 250px auto;
+    }
+
+    .page-deVote-footer {
+        height: 200px;
+    }
+
+    .page-deVote-footer {
+        grid-template-columns: 25% 1fr 20% 20% !important;
     }
 }
