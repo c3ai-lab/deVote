@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  14 FEB 2021 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  17 FEB 2021 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1127,7 +1127,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 243.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 243.
-<sampleteaser.pdf, id=7, 2055.68pt x 511.9125pt>
+<sampleteaser.pdf, id=115, 2055.68pt x 511.9125pt>
 File: sampleteaser.pdf Graphic file (type pdf)
 <use sampleteaser.pdf>
 Package pdftex.def Info: sampleteaser.pdf  used on input line 243.
@@ -1160,16 +1160,12 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 243.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 243.
-
-
-LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 243.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 243.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 243.
 LaTeX Font Info:    Try loading font information for T1+zi4 on input line 258.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
@@ -1196,11 +1192,6 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 19.87434pt on input line 262.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 262.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 262.
-
-
-LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 262.
 
 [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1214,11 +1205,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 404.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 404.
-
-
-LaTeX Warning: Reference `TotPages' on page 2 undefined on input line 404.
-
-[2.2]
+ [2.2]
 Overfull \hbox (2.79185pt too wide) in paragraph at lines 446--450
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) Your work should use stan-dard L[]T[]X sec-
 tion-ing com-mands: [][]\T1/zi4/m/n/9 section[]\T1/LinuxLibertineT-TLF/m/n/9 (-
@@ -1237,24 +1224,14 @@ Underfull \vbox (badness 2653) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `tab:freq' on page 3 undefined on input line 473.
-
-
-LaTeX Warning: Reference `tab:commands' on page 3 undefined on input line 497.
-
-
 Package natbib Warning: Citation `Lamport:LaTeX' on page 3 undefined on input l
 ine 532.
 
 
 Underfull \vbox (badness 1009) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `TotPages' on page 3 undefined on input line 558.
-
-[3.3]
-<sample-franklin.png, id=73, 411.5375pt x 323.2075pt>
+ [3.3]
+<sample-franklin.png, id=171, 411.5375pt x 323.2075pt>
 File: sample-franklin.png Graphic file (type png)
 <use sample-franklin.png>
 Package pdftex.def Info: sample-franklin.png  used on input line 573.
@@ -1422,9 +1399,6 @@ Package natbib Warning: Citation `R' on page 4 undefined on input line 675.
 Package natbib Warning: Citation `UMassCitations' on page 4 undefined on input 
 line 675.
 
-
-LaTeX Warning: Reference `TotPages' on page 4 undefined on input line 676.
-
 [4.4 <./sample-franklin.png>] Processing 'acks' comment.
 \openout3 = `comment.cut'.
 
@@ -1439,37 +1413,21 @@ Package natbib Warning: There were undefined citations.
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-
-LaTeX Warning: Reference `TotPages' on page 5 undefined on input line 773.
-
 [5.5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 773.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 773.
  (./sample-authordraft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 773.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 773.
-
-
-Package rerunfilecheck Warning: File `sample-authordraft.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sample-authordraft.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  CD9EB06E0A6A301FFA9A88D7EB42D44E;4031.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `sample-authordraft.out' has not changed.
+(rerunfilecheck)             Checksum: CD9EB06E0A6A301FFA9A88D7EB42D44E;4031.
  ) 
 Here is how much of TeX's memory you used:
- 18942 strings out of 492616
- 288925 string characters out of 6129481
- 427115 words of memory out of 5000000
- 21992 multiletter control sequences out of 15000+600000
- 220184 words of font info for 371 fonts, out of 8000000 for 9000
+ 18969 strings out of 492616
+ 289241 string characters out of 6129481
+ 427276 words of memory out of 5000000
+ 22018 multiletter control sequences out of 15000+600000
+ 215202 words of font info for 371 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,17n,94p,827b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc
@@ -1494,10 +1452,10 @@ sr/local/texlive/2019/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on sample-authordraft.pdf (5 pages, 1080754 bytes).
+Output written on sample-authordraft.pdf (5 pages, 1082514 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
+ 274 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
  43 named destinations out of 1000 (max. 500000)
- 61467 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 61171 words of extra memory for PDF output out of 61914 (max. 10000000)
 

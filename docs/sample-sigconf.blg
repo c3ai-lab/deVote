@@ -2,55 +2,122 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: sample-sigconf.aux
 The style file: ACM-Reference-Format.bst
-I found no \citation commands---while reading file sample-sigconf.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: sample-base.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in git2021scm
+Warning--no author, editor, organization, or key in git2021scm
+Warning--to sort, need author or key in git2021scm
+Warning--no key, author in git2021hub
+Warning--no author, editor, organization, or key in git2021hub
+Warning--to sort, need author or key in git2021hub
+Warning--no key, author in git2021stars
+Warning--no author, editor, organization, or key in git2021stars
+Warning--to sort, need author or key in git2021stars
+Warning--no key, author in git2021rights
+Warning--no author, editor, organization, or key in git2021rights
+Warning--to sort, need author or key in git2021rights
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--no key, author in git2021scm
+Warning--no key, author in git2021scm
+Warning--no key, author in git2021hub
+Warning--no key, author in git2021stars
+Warning--no key, author in git2021rights
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 0 entries,
+Warning--no key, author in git2021scm
+Warning--no author, editor, organization, or key in git2021scm
+Warning--empty author in git2021scm
+Warning--empty year in git2021scm
+Warning--empty booktitle in git2021scm
+Warning--empty publisher in git2021scm
+Warning--empty address in git2021scm
+Warning--page numbers missing in both pages and numpages fields in git2021scm
+Warning--no key, author in git2021hub
+Warning--no author, editor, organization, or key in git2021hub
+Warning--empty author in git2021hub
+Warning--empty year in git2021hub
+Warning--empty booktitle in git2021hub
+Warning--empty publisher in git2021hub
+Warning--empty address in git2021hub
+Warning--page numbers missing in both pages and numpages fields in git2021hub
+Warning--no key, author in git2021stars
+Warning--no author, editor, organization, or key in git2021stars
+Warning--empty author in git2021stars
+Warning--empty year in git2021stars
+Warning--empty booktitle in git2021stars
+Warning--empty publisher in git2021stars
+Warning--empty address in git2021stars
+Warning--page numbers missing in both pages and numpages fields in git2021stars
+Warning--no key, author in git2021rights
+Warning--no author, editor, organization, or key in git2021rights
+Warning--empty author in git2021rights
+Warning--empty year in git2021rights
+Warning--empty booktitle in git2021rights
+Warning--empty publisher in git2021rights
+Warning--empty address in git2021rights
+Warning--page numbers missing in both pages and numpages fields in git2021rights
+Warning--empty year in mozilla2021ops
+Warning--empty booktitle in mozilla2021ops
+Warning--empty publisher in mozilla2021ops
+Warning--empty address in mozilla2021ops
+Warning--page numbers missing in both pages and numpages fields in mozilla2021ops
+Warning--empty year in redhat2021ops
+Warning--empty booktitle in redhat2021ops
+Warning--empty publisher in redhat2021ops
+Warning--empty address in redhat2021ops
+Warning--page numbers missing in both pages and numpages fields in redhat2021ops
+Warning--empty year in linux2021ops
+Warning--empty booktitle in linux2021ops
+Warning--empty publisher in linux2021ops
+Warning--empty address in linux2021ops
+Warning--page numbers missing in both pages and numpages fields in linux2021ops
+Warning--empty year in ulrich2020dev
+Warning--no journal in ulrich2020dev
+Warning--no number and no volume in ulrich2020dev
+Warning--page numbers missing in both pages and numpages fields in ulrich2020dev
+You've used 9 entries,
             5959 wiz_defined-function locations,
-            1484 strings with 16706 characters,
-and the built_in function-call counts, 105 in all, are:
-= -- 0
-> -- 0
+            1521 strings with 17706 characters,
+and the built_in function-call counts, 7695 in all, are:
+= -- 643
+> -- 118
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 14
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 1
-empty$ -- 1
-format.name$ -- 0
-if$ -- 2
-int.to.chr$ -- 2
++ -- 40
+- -- 48
+* -- 499
+:= -- 644
+add.period$ -- 41
+call.type$ -- 9
+change.case$ -- 42
+chr.to.int$ -- 6
+cite$ -- 90
+duplicate$ -- 856
+empty$ -- 636
+format.name$ -- 52
+if$ -- 1893
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 40
-num.names$ -- 0
-pop$ -- 1
+missing$ -- 43
+newline$ -- 147
+num.names$ -- 40
+pop$ -- 639
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 72
 quote$ -- 0
-skip$ -- 1
+skip$ -- 206
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 336
+swap$ -- 45
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 224
+warning$ -- 68
+while$ -- 43
 width$ -- 0
-write$ -- 39
-(There was 1 error message)
+write$ -- 208
+(There were 68 warnings)
