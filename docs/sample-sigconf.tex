@@ -119,19 +119,39 @@ The described process is the typical approach to how the community develops for 
 
 
 \subsection{Problem}
-The described workflow for managing repositories on GitHub but also on other hosting services such as GitLab or Bitbucket has some significant disadvantages. Firstly this approach is not necessarily decentralised or democratic. Very few people usually have the necessary rights to merge pull requests, and they can decide over the head of the general community whether to merge or reject a pull request. So it doesn't matter what the general community thinks, as long as the administrators have a different opinion. Rejecting good or useful pull requests is bad, but not a direct threat to the project. The opposite is to merge a critical bug into the main repository, which can cause enormous damage, as in the example of the Heartbleed bug in the Open SSL repository \cite{ioriheartbleed}. This danger exists mainly because it only takes one person with the necessary rights to overlook the bug and decide to merge the flawed pull request. Less critical problems, which nevertheless complicate the work in the communities of open source projects, are the lack of initiative for developers to review pull requests or to create pull requests themselves. If an open source repository is not financially supported by a company or a large community, they usually live on developers who work on these projects in their spare time, which means that further development sometimes takes a very long time. 
+The described workflow for managing repositories on GitHub but also on other hosting services such as GitLab or Bitbucket has 
+some significant disadvantages. Firstly this approach is not necessarily decentralised or democratic. Very few people usually have 
+the necessary rights to merge pull requests, and they can decide over the head of the general community whether to merge or reject
+ a pull request. So it doesn't matter what the general community thinks, as long as the administrators have a different opinion. Rejecting
+ good or useful pull requests is bad, but not a direct threat to the project. The opposite is to merge a critical bug into the main repository,
+ which can cause enormous damage, as in the example of the Heartbleed bug in the Open SSL repository \cite{ioriheartbleed}. This 
+danger exists mainly because it only takes one person with the necessary rights to overlook the bug and decide to merge the flawed 
+pull request. Less critical problems, which nevertheless complicate the work in the communities of open source projects, are the lack
+ of initiative for developers to review pull requests or to create pull requests themselves. If an open source repository is not financially
+ supported by a company or a large community, they usually live on developers who work on these projects in their spare time, which 
+means that further development sometimes takes a very long time. 
 
 
 \subsection{Solution}
-To solve these problems, this paper presents the development of a chrome browser extension that uses the GitHub API and the Ethereum blockchain to enable decentralised management of pull requests in GitHub repositories with a financial incentive for the community. Using the Ethereum Blockchain, the community can vote on which pull requests should be merged or rejected, with decisions to merge good requests and reject bad ones being rewarded. In addition, the community can use a crowdfunding mechanism to pool Ether, the native currency of the Ethereum blockchain, to pay developers for solving problems or bugs. The functioning of the protocol on which the browser extension is based is explained in detail in \textit{3. Protocol}. Our goal with this browser extension and this paper is to solve the problems mentioned and to improve the way open source development is done.
+To solve these problems, this paper presents the development of a chrome browser extension that uses the GitHub API and the 
+Ethereum blockchain to enable decentralised management of pull requests in GitHub repositories with a financial incentive for 
+the community. Using the Ethereum Blockchain, the community can vote on which pull requests should be merged or rejected,
+ with decisions to merge good requests and reject bad ones being rewarded. In addition, the community can use a crowdfunding
+ mechanism to pool Ether, the native currency of the Ethereum blockchain, to pay developers for solving problems or bugs. The
+ functioning of the protocol on which the browser extension is based is explained in detail in \textit{3. Protocol}. Our goal with
+ this browser extension and this paper is to solve the problems mentioned and to improve the way open source development 
+is done.
 
 \section{Related work}
-Related work falls into three areas: repository governance, decentralised voting and developer initiative.
-
-
-- Torbens (Dezentralisierter Ansatz)
-- GOVERNING OPEN SOURCE SOFTWARE THROUGH COORDINATION PROCESSES 
-- Bounties in Open Source Development on GitHub: A Case Study of Bountysource Bounties
+Related work falls into three areas: \textit{repository governance}, \textit{decentralised voting} and \textit{developer initiative}. 
+Previous work has already looked at decentralised approaches to manage GitHub repositories. One work pursues the idea that 
+a repository always belongs to the ownerless protocol and that pull requests can only be merged or rejected by the community 
+via this protocol. This should prevent the danger that users with writing rights misuse them \cite{ulrich2020dev}. \\ \\
+Furthermore trustless and decentralised voting on the blockchain is a topic that has been addressed in several papers 
+and which also plays a critical role in this paper \cite{khoury2018decentralized, ulrich2020dev}. \\ \\
+In addition, the lack of financial incentive to implement problems or changes in a repository is an issue that has been investigated. 
+The research looked at what is important to the developer who solves the bounty and what is important to the financial backer of 
+the bounty. \cite{zhou2019bounties}
 
 \section{Protocol}
 - Wieso gibt es zwei Protokolle?
@@ -148,6 +168,7 @@ Related work falls into three areas: repository governance, decentralised voting
 
 
 \section{Discussion}
+\textbf{First and second iteration}\\
 - Was sehe ich für Probleme
 
 \section{Conclusion and future work}
