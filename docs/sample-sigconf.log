@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  21 FEB 2021 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  21 FEB 2021 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1113,8 +1113,9 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 84.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--119
-
+Overfull \hbox (3.81805pt too wide) in paragraph at lines 84--84
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) projects.In this pa-per, we present a block
+chain-based chrome browser
  []
 
 
@@ -1122,14 +1123,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--119
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--119
+
+ []
+
+[1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 141.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 146--155
 
  []
@@ -1144,15 +1148,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--178
 
  []
 
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
 <images/firstprotocol.png, id=106, 2159.06625pt x 834.11626pt>
 File: images/firstprotocol.png Graphic file (type png)
 <use images/firstprotocol.png>
 Package pdftex.def Info: images/firstprotocol.png  used on input line 181.
 (pdftex.def)             Requested size: 398.33858pt x 153.88908pt.
-
 
 Class acmart Warning: A possible image without description on input line 184.
 
@@ -1209,6 +1209,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--258
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3.3 <./images/firstprotocol.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 260--284
 
@@ -1254,7 +1257,7 @@ LaTeX Info: Redefining \tempurl on input line 189.
 LaTeX Info: Redefining \tempurl on input line 203.
 LaTeX Info: Redefining \tempurl on input line 238.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2698) has occurred while \output is active []
 
  [4.4]
 LaTeX Info: Redefining \tempurl on input line 265.
@@ -1277,19 +1280,15 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 Package rerunfilecheck Info: File `sample-sigconf.out' has not changed.
 (rerunfilecheck)             Checksum: B5CC126A5F37FAB040241BCAC065D794;1743.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  18614 strings out of 492616
  281698 string characters out of 6129481
- 419530 words of memory out of 5000000
+ 420414 words of memory out of 5000000
  21782 multiletter control sequences out of 15000+600000
  100657 words of font info for 200 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,837b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,837b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
 }{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{
@@ -1300,7 +1299,7 @@ sr/local/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb
 .pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinLibert
 ineTB.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinL
 ibertineTI.pfb>
-Output written on sample-sigconf.pdf (5 pages, 447596 bytes).
+Output written on sample-sigconf.pdf (5 pages, 448101 bytes).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
  189 compressed objects within 2 object streams
