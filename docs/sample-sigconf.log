@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  21 FEB 2021 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  21 FEB 2021 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1124,7 +1124,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--119
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 141.
-[1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 146--155
@@ -1141,11 +1144,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--178
 
  []
 
-<images/firstprotocol.png, id=109, 2159.06625pt x 834.11626pt>
+
+Underfull \vbox (badness 1072) has occurred while \output is active []
+
+<images/firstprotocol.png, id=106, 2159.06625pt x 834.11626pt>
 File: images/firstprotocol.png Graphic file (type png)
 <use images/firstprotocol.png>
 Package pdftex.def Info: images/firstprotocol.png  used on input line 181.
 (pdftex.def)             Requested size: 398.33858pt x 153.88908pt.
+
 
 Class acmart Warning: A possible image without description on input line 184.
 
@@ -1182,12 +1189,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--229
 
  []
 
-
-Underfull \vbox (badness 2096) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 229.
- [2.2]
+[2.2]
 Underfull \hbox (badness 10000) in paragraph at lines 231--258
 
  []
@@ -1215,9 +1219,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--284
 
  []
 
-(./sample-sigconf.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--297
+
+ []
+
+(./sample-sigconf.bbl
 LaTeX Info: Redefining \tempurl on input line 59.
 LaTeX Info: Redefining \tempurl on input line 72.
 LaTeX Info: Redefining \tempurl on input line 85.
@@ -1243,6 +1253,10 @@ ting -[] up -[] and -[] managing -[] your -[] github -[] user -[]
 LaTeX Info: Redefining \tempurl on input line 189.
 LaTeX Info: Redefining \tempurl on input line 203.
 LaTeX Info: Redefining \tempurl on input line 238.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4.4]
 LaTeX Info: Redefining \tempurl on input line 265.
 )
 
@@ -1255,27 +1269,27 @@ e.
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[4.4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
+[5.5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (./sample-sigconf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 Package rerunfilecheck Info: File `sample-sigconf.out' has not changed.
 (rerunfilecheck)             Checksum: B5CC126A5F37FAB040241BCAC065D794;1743.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18607 strings out of 492616
- 281542 string characters out of 6129481
- 417931 words of memory out of 5000000
+ 18614 strings out of 492616
+ 281698 string characters out of 6129481
+ 419530 words of memory out of 5000000
  21782 multiletter control sequences out of 15000+600000
- 99915 words of font info for 196 fonts, out of 8000000 for 9000
+ 100657 words of font info for 200 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,837b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,837b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
 }{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{
@@ -1286,10 +1300,10 @@ sr/local/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb
 .pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinLibert
 ineTB.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinL
 ibertineTI.pfb>
-Output written on sample-sigconf.pdf (4 pages, 443634 bytes).
+Output written on sample-sigconf.pdf (5 pages, 447596 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  27774 words of extra memory for PDF output out of 29859 (max. 10000000)
 
