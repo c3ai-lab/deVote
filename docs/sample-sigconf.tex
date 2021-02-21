@@ -101,7 +101,7 @@ In particular, the version control protocol Git
 is ideally for open source development, because with Git it is possible to have several distributed remotes that can 
 access and manage the same source code \cite{git2021scm, ulrich2020dev}. Projects that are coordinated via git are 
 called repositories. The developers have a local copy of the repository on their systems and can push their changes to or 
-pull the current status from the master repository. These actions are coordinated via a so-called git server, which has to be 
+pull the current status from the main repository. These actions are coordinated via a so-called git server, which has to be 
 hosted somewhere so that the developers can work with it \cite{git2021scm}. It is important that this server is permanently 
 accessible, otherwise the actions mentioned will no longer work. and coordination of the repository will be 
 interrupted \cite{ulrich2020dev}. Hosting services such as GitHub were created so that such problems can be prevented 
@@ -115,13 +115,12 @@ accepted (merged) and even delete the repository. In addition, he can add so-cal
 read and write rights in the repository \cite{git2021rights}. Normal users who do not have collaboration rights can contribute to 
 the open source project by creating a pull request with their change. Another user with the necessary rights can then decide 
 whether the change is useful or not. Depending on his decision, he can merge (accept) or reject (reject) the changes. 
-The described process is the typical approach to how the community develops in an open source project.
+The described process is the typical approach to how the community develops for an open source project.
 
 
 \subsection{Problem}
+The described workflow for managing repositories on GitHub but also on other hosting services such as GitLab or Bitbucket has some significant disadvantages. Firstly this approach is not necessarily decentralised or democratic. Very few people usually have the necessary rights to merge pull requests, and they can decide over the head of the general community whether to merge or reject a pull request. So it doesn't matter what the general community thinks, as long as the administrators have a different opinion. Rejecting good or useful pull requests is bad, but not a direct threat to the project. The opposite is to merge a critical bug into the main repository, which can cause enormous damage, as in the example of the Heartbleed bug in the Open SSL repository \cite{ioriheartbleed}. This danger exists mainly because it only takes one person with the necessary rights to overlook the bug and decide to merge the flawed pull request. A less critical problem, but one that affects many of the open source repositories that are not supported by companies or large communities, is the lack of funding and thus further development. Many projects live on developers who work on these projects in their spare time, which means that further development and maintenance of this repositories can sometimes stagnate or even cease completely.
 
-- Was ist das Problem?
-- Was ist unser Beitrag?
 
 \subsection{Solution}
 

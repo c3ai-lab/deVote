@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -101,6 +101,15 @@
 \tempurl}
 \newblock
 \shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{Iori}{Iori}{[n.d.]}]%
+        {ioriheartbleed}
+\bibfield{author}{\bibinfo{person}{Melissa Iori}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{Heartbleed Keeps Flowing-Open Source Security}.
+\newblock  (\bibinfo{year}{[n.\,d.]}).
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Redhat}{Redhat}{[n.d.]}]%
