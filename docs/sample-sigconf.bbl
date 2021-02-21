@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{16}
+\begin{thebibliography}{20}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -51,8 +51,34 @@
 
 
 \bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]a}]%
-        {eth2021doc}
+        {eth2021fees}
  \bibinfo{year}{[n.d.]}\natexlab{a}.
+\newblock \showarticletitle{Ethereum Avg. Transaction Fee historical chart}.
+\newblock
+\urldef\tempurl%
+\url{https://bitinfocharts.com/de/comparison/ethereum-transactionfees.html}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]b}]%
+        {eth2021scan}
+ \bibinfo{year}{[n.d.]}\natexlab{b}.
+\newblock \showarticletitle{Ethereum Daily Transactions Chart}.
+\newblock
+\urldef\tempurl%
+\url{https://etherscan.io/chart/tx}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]c}]%
+        {eth2021doc}
+ \bibinfo{year}{[n.d.]}\natexlab{c}.
 \newblock \showarticletitle{Ethereum developer resources}.
 \newblock
 \urldef\tempurl%
@@ -115,9 +141,9 @@
 \shownote{[Online; Retrieved 20.02.2021].}
 
 
-\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]b}]%
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]d}]%
         {eth2021contracts}
- \bibinfo{year}{[n.d.]}\natexlab{b}.
+ \bibinfo{year}{[n.d.]}\natexlab{d}.
 \newblock \showarticletitle{Introduction to smart contracts}.
 \newblock
 \urldef\tempurl%
@@ -129,12 +155,38 @@
 
 
 \bibitem[\protect\citeauthoryear{??}{git}{[n.d.]e}]%
-        {git2021rights}
+        {git2021auth}
  \bibinfo{year}{[n.d.]}\natexlab{e}.
+\newblock \showarticletitle{Managing OAuth Apps}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.github.com/en/developers/apps/managing-oauth-apps}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]f}]%
+        {git2021rights}
+ \bibinfo{year}{[n.d.]}\natexlab{f}.
 \newblock \showarticletitle{Permission levels for a user account repository}.
 \newblock
 \urldef\tempurl%
 \url{https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{web}{[n.d.]}]%
+        {web32021js}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{web3.js - Ethereum JavaScript API}.
+\newblock
+\urldef\tempurl%
+\url{https://web3js.readthedocs.io/en/v1.3.0/}
 \showURL{%
 \tempurl}
 \newblock

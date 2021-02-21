@@ -205,7 +205,8 @@ is reasonable, they can initiate a bounty process for the issue. The community c
  to motivate a developer to solve the issue. A developer can potentially receive this bounty as a reward  if he solves the 
 issue in a pull request and the community accepts it. The Ether paid into the bounty is held in a smart contract for a certain 
 period of time, so that the bounty cannot be negatively manipulated in the short term. If no developer wants to solve this issue
-and the period described above has expired, the the community members that funded the bounty receive their shares back. \\ \\
+and the period described above has expired, the the community members that funded the bounty receive their shares back.
+(GRAFIK) \\ \\
 \textbf{Phase 2: Issue claiming and solution} \\
 While the community collects the bounty, a developer can always decide for himself whether the bounty is high enough for him to 
 solve the issue. As soon as the reward is high enough that a developer would solve the issue for this amount, he can claim the
@@ -214,7 +215,7 @@ by one developer. The developer has to pay a collateral to claim the issue, whic
 a solution within a given period of time or if it is rejected by the community. Once the issue is reserved by a developer, 
 he has a certain period of time in which he has to program a solution and provide it as a pull request. If the developer does not 
 provide a solution or it is rejected by the community, he loses his stake, which is then sent to the bounty. The issue is then set back 
-to the claiming phase. \\ \\
+to the claiming phase. (GRAFIK)\\ \\
 \textbf{Phase 3: Pull request voting} \\
 This process is the same as the first variant of the protocol, the only differences are that the voting process starts, when 
 the developer submits his pull requests and that the staker must include a comment on his 
@@ -222,9 +223,9 @@ vote as to why he voted the way he did. This comment is then posted in the comme
 \textbf{Phase 4: Evaluation and distribution} \\
 As with the first protocol, the minority stakes are transferred to the majority stakers after the voting phase. The difference 
 here is that if the pull request is accepted by the community, the developer receives a fixed percentage share of the minority
-stakes and the remaining share goes to the majority staker. He also receives the collected bounty. However, if the pull request 
-is rejected,the developer loses his however, which gets allocated to the bounty and the protocol puts the issue back
- into the claiming phase.
+stakes and the remaining share goes to the majority staker. He also receives the collected bounty and his collateral. However, 
+if the pull request is rejected,the developer loses his however, which gets allocated to the bounty and the protocol puts the issue 
+back into the claiming phase.
 
 \section{Implementation}
 The implementation of the chrome browser extension consists of a frontend and the in \textit{3. Protocol} described protocol.
@@ -234,33 +235,42 @@ The mentioned chrome extension frontend has been created according to the curren
 and the Chrome extension API \cite{chrome2021api}. In summary, the chrome extension was developed as a kind of web application 
 with a few specific limitations. On the other hand, the development and implementation of the protocol required much more thought.
 The protocol must connect the Ethereum blockchain with GitHub and, so to speak, mediate the data between the two endpoints. \\ \\
-The collaboration with the Ethereum blockchain was done using the JavaScript library web3js. This library enables interactions with an 
+The collaboration with the Ethereum blockchain was done using the JavaScript library web3js \cite{web32021js}. 
+This library enables interactions with an 
 Ethereum node and thus with the blockchain using HTTP. This allows the chrome extension to retrieve general information from the 
 blockchain, but also to write data and even create smart contracts. Querying blockchain data does not require any special settings, 
 as it is a read-only request. All write actions on the blockchain, such as voting on a pull request or generating a smart contract, require
  a wallet in the extension, as you have to pay transaction fees for the actions. \\ \\
-No special library is needed for the GitHub connection, this is done via the API provided by GitHub. This can also be accessed using 
+No special library is needed for the GitHub connection, this is done via the API provided by GitHub \cite{git2021api}. 
+This can also be accessed using 
 HTTP, which is needed to fetch information about repositories, to create voting comments or to merge or reject a pull request.
 In contrast to working with the Ethereum blockchain and smart contracts, many of the requests against the GitHub API require an 
-authentication token, which can be fetched via the GitHub oAuth API. The GitHub oAuth is used as a login in the extension, which
+authentication token, which can be fetched via the GitHub oAuth API \cite{git2021auth}. The GitHub oAuth is used as a login in the extension, which
  means that the extension does not need its own login and can therefore fetch the authentication token. However, the token alone 
 is not sufficient as authentication for every request; for merging and rejecting pull requests, a developer token must also be stored 
 in the extension, which can be obtained from the GitHub account settings.
 
 \section{Discussion}
 \textbf{Protocol change}\\
-- Was sehe ich für Probleme
-- Was machen wir gut?
-- Wo sehe ich noch Probleme?
-
+In the course of implementing the first protocol, we found some major flaws in it, which is why we have modified and extended it as 
+described in \textit{3. Protocol}. In a conversation with several software developers, the question came up how to protect the protocol from 
+malicious users creating pull requests and releasing them for voting.  For this reason, it was decided that the release for voting cannot take
+ place through the general community, as otherwise the danger of such attacks is too great. In the second iteration of the protocol, pull 
+requests are released by users with administrator rights by opening the bounty for them. At this point, decentralisation must be reduced 
+in order to provide more security. In addition, the idea came up to use the bounty system to create a further incentive for development and maintenance in open source projects, which was not given in the first protocol.This adaptation should lead to a free market for the 
+development of features or the solution of issues. This also aims to improve the quality of pull requests, as developers have to put effort 
+into their development in order for the pull request to be accepted and for them to receive both their collateral and the bounty. \\ \\
 \textbf{Advantages and disadvantages of ethereum}\\
-
-
-\textbf{GitHub API management}\\
+At the time of this research paper, Ethereum is one of the largest blockchain platforms with over one million daily transactions \cite{eth2021scan}.
+While Ethereum is constantly being developed and improved due to the size of the community, the main blockchain is not currently 
+suitable for this application. Currently, the Ethereum fees for a transaction are around 23.70\$ \cite{eth2021fees}. This means that you have to pay this 
+fee for every action, whether voting or contributing to an issue. Unfortunately, this is not sustainable, although future developments 
+of the Ethereum protocol may change this. Currently, this problem is being avoided by working on the Ethereum testnet Sokol. 
+However, this cannot be used in live operation because the Ether on this chain has no value. \\ \\
+\textbf{Synchronisation of events}\\
+Wie läuft der Kram im Background ab wieso schlecht?
 - Wie ein Wallet einbinden? Das fehlt. Bisher 
-- Gas fees
-- GitHub oAuth
-- GitHub
+- Wo sehe ich noch Probleme?
 
 \section{Conclusion and future work}
 - Anbindung an Torbens 
