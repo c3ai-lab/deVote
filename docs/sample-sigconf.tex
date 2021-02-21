@@ -248,7 +248,13 @@ In contrast to working with the Ethereum blockchain and smart contracts, many of
 authentication token, which can be fetched via the GitHub oAuth API \cite{git2021auth}. The GitHub oAuth is used as a login in the extension, which
  means that the extension does not need its own login and can therefore fetch the authentication token. However, the token alone 
 is not sufficient as authentication for every request; for merging and rejecting pull requests, a developer token must also be stored 
-in the extension, which can be obtained from the GitHub account settings.
+in the extension, which can be obtained from the GitHub account settings. \\ \\
+Probably the most difficult aspect of the implementation of the chrome extension is the completion of the voting, i.e. \textit{Phase 4: 
+Evaluation and distribution}. Contrary to the other phases and actions, this process must happen automatically as soon as the 
+voting phase ends. However, since we only have a client-side programme, we can only detect this when one of the developed 
+chrome extensions is running. For this reason, after the GitHub oAuth login, the extension checks if there are completed pull 
+request votes and if so, the extension triggers the described workflow \textit{Phase 4: Evaluation and distribution} for the 
+pull request in the background.
 
 \section{Discussion}
 \textbf{Protocol change}\\
@@ -267,14 +273,19 @@ suitable for this application. Currently, the Ethereum fees for a transaction ar
 fee for every action, whether voting or contributing to an issue. Unfortunately, this is not sustainable, although future developments 
 of the Ethereum protocol may change this. Currently, this problem is being avoided by working on the Ethereum testnet Sokol. 
 However, this cannot be used in live operation because the Ether on this chain has no value. \\ \\
-\textbf{Synchronisation of events}\\
-Wie läuft der Kram im Background ab wieso schlecht?
-- Wie ein Wallet einbinden? Das fehlt. Bisher 
-- Wo sehe ich noch Probleme?
+\textbf{Synchronisation of voting results}\\
+The current browser extension approach has the advantage that everything is started from the extension and you can react to misbehaviour 
+on the part of the web3js library or GitHub API. However, this approach has difficulties especially when completing voting polls.
+Because there is no central server that carries out these changes, there is always the danger that two clients simultaneously initiate 
+this process in the background. Although no direct damage can be done, unnecessary transaction fees may be incurre. In addition, it is 
+problematic that if a voting phase expires but no one starts the extension for a longer period of time, the associated pull request is not 
+merged or rejected and the stakes and bounties are not sent. Also, this implementation requires that community members are willing to 
+load their own wallets with Ethereum and pay transaction fees for the actions.
 
 \section{Conclusion and future work}
 - Anbindung an Torbens 
-
+- Würden Leute wirklich gas fees zahlen?
+- Technische Änderungen und Studien.
 
 
 
