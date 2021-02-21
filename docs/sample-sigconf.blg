@@ -19,15 +19,36 @@ Warning--to sort, need author or key in git2021stars
 Warning--no key, author in git2021rights
 Warning--no author, editor, organization, or key in git2021rights
 Warning--to sort, need author or key in git2021rights
+Warning--no key, author in git2021api
+Warning--no author, editor, organization, or key in git2021api
+Warning--to sort, need author or key in git2021api
+Warning--no key, author in eth2021contracts
+Warning--no author, editor, organization, or key in eth2021contracts
+Warning--to sort, need author or key in eth2021contracts
+Warning--no key, author in eth2021doc
+Warning--no author, editor, organization, or key in eth2021doc
+Warning--to sort, need author or key in eth2021doc
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--no key, author in eth2021doc
+Warning--no key, author in eth2021doc
+Warning--no key, author in eth2021contracts
 Warning--no key, author in git2021scm
 Warning--no key, author in git2021scm
 Warning--no key, author in git2021hub
+Warning--no key, author in git2021api
 Warning--no key, author in git2021stars
 Warning--no key, author in git2021rights
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in eth2021doc
+Warning--no author, editor, organization, or key in eth2021doc
+Warning--empty author in eth2021doc
+Warning--empty year in eth2021doc
+Warning--empty booktitle in eth2021doc
+Warning--empty publisher in eth2021doc
+Warning--empty address in eth2021doc
+Warning--page numbers missing in both pages and numpages fields in eth2021doc
 Warning--no key, author in git2021scm
 Warning--no author, editor, organization, or key in git2021scm
 Warning--empty author in git2021scm
@@ -44,6 +65,14 @@ Warning--empty booktitle in git2021hub
 Warning--empty publisher in git2021hub
 Warning--empty address in git2021hub
 Warning--page numbers missing in both pages and numpages fields in git2021hub
+Warning--no key, author in git2021api
+Warning--no author, editor, organization, or key in git2021api
+Warning--empty author in git2021api
+Warning--empty year in git2021api
+Warning--empty booktitle in git2021api
+Warning--empty publisher in git2021api
+Warning--empty address in git2021api
+Warning--page numbers missing in both pages and numpages fields in git2021api
 Warning--no key, author in git2021stars
 Warning--no author, editor, organization, or key in git2021stars
 Warning--empty author in git2021stars
@@ -52,6 +81,14 @@ Warning--empty booktitle in git2021stars
 Warning--empty publisher in git2021stars
 Warning--empty address in git2021stars
 Warning--page numbers missing in both pages and numpages fields in git2021stars
+Warning--no key, author in eth2021contracts
+Warning--no author, editor, organization, or key in eth2021contracts
+Warning--empty author in eth2021contracts
+Warning--empty year in eth2021contracts
+Warning--empty booktitle in eth2021contracts
+Warning--empty publisher in eth2021contracts
+Warning--empty address in eth2021contracts
+Warning--page numbers missing in both pages and numpages fields in eth2021contracts
 Warning--no key, author in git2021rights
 Warning--no author, editor, organization, or key in git2021rights
 Warning--empty author in git2021rights
@@ -87,45 +124,45 @@ Warning--no number and no volume in ulrich2020dev
 Warning--page numbers missing in both pages and numpages fields in ulrich2020dev
 Warning--no number and no volume in zhou2019bounties
 Warning--page numbers missing in both pages and numpages fields in zhou2019bounties
-You've used 12 entries,
+You've used 15 entries,
             5959 wiz_defined-function locations,
-            1536 strings with 18243 characters,
-and the built_in function-call counts, 10834 in all, are:
-= -- 990
+            1545 strings with 18475 characters,
+and the built_in function-call counts, 13127 in all, are:
+= -- 1128
 > -- 253
 < -- 0
-+ -- 83
++ -- 88
 - -- 92
-* -- 738
-:= -- 986
-add.period$ -- 56
-call.type$ -- 12
-change.case$ -- 64
-chr.to.int$ -- 9
-cite$ -- 101
-duplicate$ -- 1131
-empty$ -- 836
+* -- 900
+:= -- 1106
+add.period$ -- 68
+call.type$ -- 15
+change.case$ -- 76
+chr.to.int$ -- 10
+cite$ -- 151
+duplicate$ -- 1434
+empty$ -- 1065
 format.name$ -- 104
-if$ -- 2646
-int.to.chr$ -- 5
+if$ -- 3245
+int.to.chr$ -- 7
 int.to.str$ -- 1
-missing$ -- 56
-newline$ -- 170
+missing$ -- 71
+newline$ -- 209
 num.names$ -- 64
-pop$ -- 784
+pop$ -- 1047
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 134
 quote$ -- 0
-skip$ -- 284
+skip$ -- 346
 stack$ -- 0
-substring$ -- 508
-swap$ -- 64
+substring$ -- 583
+swap$ -- 76
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 286
-warning$ -- 76
+type$ -- 364
+warning$ -- 113
 while$ -- 62
 width$ -- 0
-write$ -- 257
-(There were 76 warnings)
+write$ -- 314
+(There were 113 warnings)
