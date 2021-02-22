@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{20}
+\begin{thebibliography}{21}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -180,6 +180,19 @@
 \shownote{[Online; Retrieved 20.02.2021].}
 
 
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]e}]%
+        {eth2021sokol}
+ \bibinfo{year}{[n.d.]}\natexlab{e}.
+\newblock \showarticletitle{Sokol blockexplorer}.
+\newblock
+\urldef\tempurl%
+\url{https://blockscout.com/poa/sokol/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 22.02.2021].}
+
+
 \bibitem[\protect\citeauthoryear{??}{web}{[n.d.]}]%
         {web32021js}
  \bibinfo{year}{[n.d.]}\natexlab{}.
@@ -274,7 +287,7 @@
 \bibfield{author}{\bibinfo{person}{Torben Ulrich}.}
   \bibinfo{year}{[n.d.]}\natexlab{}.
 \newblock \showarticletitle{Development of a blockchain based access control
-  protocol for GitHub repositories as Open-Source project.}
+  protocol for GitHub repositories as open-source project.}
 \newblock  (\bibinfo{year}{[n.\,d.]}).
 \newblock
 
