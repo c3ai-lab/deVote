@@ -1,6 +1,7 @@
 
 \documentclass[sigconf]{acmart}
 \settopmatter{printacmref=false}
+\usepackage[ruled,vlined]{algorithm2e}
 
 
 \AtBeginDocument{%
@@ -212,8 +213,7 @@ and the period described above has expired, the the community members that funde
 	\includegraphics[width=75mm]{images/phase1.png}
 	\caption{Workflow of the first phase}
 	\label{fig:arch-phase1}
-\end{figure}
-
+\end{figure} 
 \textbf{Phase 2: Issue claiming and solution} \\
 While the community collects the bounty, a developer can always decide for himself whether the bounty is high enough for him to 
 solve the issue. As soon as the reward is high enough that a developer would solve the issue for this amount, he can claim the
@@ -222,17 +222,42 @@ by one developer. The developer has to pay a collateral to claim the issue, whic
 a solution within a given period of time or if it is rejected by the community. Once the issue is reserved by a developer, 
 he has a certain period of time in which he has to program a solution and provide it as a pull request. If the developer does not 
 provide a solution or it is rejected by the community, he loses his stake, which is then sent to the bounty. The issue is then set back 
-to the claiming phase. (GRAFIK)\\ \\
+to the claiming phase.\\ \\
 \textbf{Phase 3: Pull request voting} \\
 This process is the same as the first variant of the protocol, the only differences are that the voting process starts, when 
 the developer submits his pull requests and that the staker must include a comment on his 
 vote as to why he voted the way he did. This comment is then posted in the comment section of the pull request. \\ \\
 \textbf{Phase 4: Evaluation and distribution} \\
 As with the first protocol, the minority stakes are transferred to the majority stakers after the voting phase. The difference 
-here is that if the pull request is accepted by the community, the developer receives a fixed percentage share of the minority
-stakes and the remaining share goes to the majority staker. He also receives the collected bounty and his collateral. However, 
-if the pull request is rejected,the developer loses his however, which gets allocated to the bounty and the protocol puts the issue 
+here is that if the pull request is accepted by the community, the developer receives his bounty and collateral
+and the majority stakers divide up the minority stakers among themselves. However, 
+if the pull request is rejected,the developer loses his collateral, which gets allocated to the bounty and the protocol puts the issue 
 back into the claiming phase.
+
+\begin{algorithm}
+  \caption{Stake distribution algorithm using the example of an accepted pull request}
+  \label{alg:evalstake}
+	\SetKwData{FullStakes}{fullStake}
+	\SetKwData{ProStakes}{proStake}
+	\SetKwData{Share}{share}
+	\SetKwFunction{Transfer}{Transfer}
+	\SetKwFunction{SumStakes}{SumStakes}
+	\SetKwInOut{Input}{Input}
+\SetAlgoLined
+	\Input{All votes \textit{votes}; Developer \textit{dev}; Pro votes \textit{provotes}; Bounty \textit{bounty}; 
+	Collateral \textit{collateral}}
+	\BlankLine
+	\BlankLine
+	\FullStakes$\leftarrow$ \SumStakes{votes}\;
+	\ProStakes$\leftarrow$ \SumStakes{provotes}\;
+	\BlankLine
+	 \ForEach{$vote \in provotes$}{
+	  	share$\leftarrow$ $(vote.weight \div \ProStakes) \cdot \FullStakes$
+		\Transfer{$vote.address$, $share$}\;
+	 }
+	\Transfer{$dev.address$, $bounty + collateral$}\;
+
+\end{algorithm}
 
 \section{Implementation}
 The implementation of the chrome browser extension consists of a frontend and the in \textit{3. Protocol} described protocol.
