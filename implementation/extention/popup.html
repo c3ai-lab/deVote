@@ -7,11 +7,18 @@
 
 <body>
 
-  <div>
+  <div id="deVote-container">
     <!-- Login -->
     <div id="loginCard" class="card">
       <div class="login-container">
-        <h2 class="header">deVote</h2>
+        <div class="header-container header-container-fixed">
+          <div>
+            <img src="./assets/logo.png">
+          </div>
+          <div>
+            <h2 class="header">deVote</h2>
+          </div>
+        </div>
         <div>
           <div class="login-warning">
             <span class="warning">
@@ -83,66 +90,112 @@
       </div>
     </div>
 
+    <!------------------------------------------ Repository Information Menu ------------------------------------------>
+
+    <div id="repoInfoCard" class="card">
+      <div class="repository-settings-container">
+
+        <div class="header-container header-container-fixed-2">
+          <div>
+            <img src="./assets/actions.png">
+          </div>
+          <div>
+            <h2 class="header">Repository actions</h2>
+          </div>
+        </div>
+
+        <div id="repository-settings-action" class="repository-settings-actions">
+          <div id="showIssuesBtn" class="dark-btn">
+            <span>Issues</span>
+          </div>
+
+          <div id="showPullsBtn" class="dark-btn">
+            <span>Polls</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="dark-btn backBtn">
+            <span>Back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Issue List ------------------------------------------>
+
+    <div id="issuesCard" class="card">
+      <div class="issues-container">
+
+        <div class="header-container header-container-fixed">
+          <div>
+            <img src="./assets/tasks.png">
+          </div>
+          <div>
+            <h2 id="issueHeader" class="header">Open Issues</h2>
+          </div>
+        </div>
+
+        <div id="issuesList" class="issues-list">
+
+        </div>
+        <div>
+          <div class="dark-btn backBtn">
+            <span>Back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Issue Action ------------------------------------------>
+
+    <div id="issueActionCard" class="card">
+      <div class="issues-actions">
+
+        <div class="header-container header-container-fixed">
+          <div>
+            <img src="./assets/actions.png">
+          </div>
+          <div>
+            <h2 id="issueHeader" class="header">Issue Actions</h2>
+          </div>
+        </div>
+
+        <div id="issue-info-actions" class="issue-info-actions">
+          <div id="issue-title-container" class="issue-title-container">
+            <span id="issue-title" class="issue-title">Hallo boys</span>
+          </div>
+          <div id="issue-stake-container" class="issue-stake-container">
+            <span id="issue-stake" class="issue-stake">Bounty: 0.11 ETH</span>
+          </div>
+        </div>
+
+        <div id="issue-settings-actions" class="issue-settings-actions"></div>
+
+        <div>
+          <div class="dark-btn backBtn">
+            <span>Back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!------------------------------------------ Polls List ------------------------------------------>
 
     <!-- Polls Requests -->
     <div id="pollsCard" class="card">
       <div class="poll-container">
 
-        <div class="header-container header-container-variable">
-          <div>
-            <img src="./assets/poll.png">
-          </div>
-          <div>
-            <h2 id="pollsHeader" class="header"></h2>
-          </div>
-        </div>
-
-        <div id="pollsList" class="poll-list"></div>
-
-        <div>
-          <div id="showPollsBtn" class="dark-btn show-polls-btn">
-            <span>
-              Show pollable pull-requests
-            </span>
-            <div>
-              0
-            </div>
-          </div>
-
-          <div id="showMergeBtn" class="dark-btn show-polls-btn">
-            <span>
-              Show mergeable pull-requests
-            </span>
-            <div>
-              0
-            </div>
-          </div>
-
-          <div class="dark-btn backBtn">
-            <span>
-              Back
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!------------------------------------------ Pollable List ------------------------------------------>
-
-    <div id="pullCard" class="card">
-      <div class="pollable-container">
-
-        <div class="header-container header-container-variable">
+        <div id="pollsHeader" class="header-container header-container-fixed">
           <div>
             <img src="./assets/pollable.png">
           </div>
           <div>
-            <h2 id="pollableHeader" class="header">Pollable Requests</h2>
+            <h2 id="pollableHeader" class="header">Open Polls</h2>
           </div>
         </div>
 
-        <div id="pullList" class="pollable-list">
+        <div id="pollsList" class="poll-list">
 
         </div>
         <div>
@@ -154,31 +207,38 @@
     </div>
 
 
-        <!------------------------------------------ Pollable List ------------------------------------------>
+    <!------------------------------------------ Poll Action ------------------------------------------>
 
-        <div id="mergeCard" class="card">
-          <div class="mergeable-container">
-    
-            <div class="header-container header-container-variable">
-              <div>
-                <img src="./assets/github.png">
-              </div>
-              <div>
-                <h2 id="mergeableHeader" class="header">Mergeable Requests</h2>
-              </div>
-            </div>
-    
-            <div id="mergeList" class="mergeable-list">
-    
-            </div>
-            <div>
-              <div class="dark-btn backBtn">
-                <span>Back</span>
-              </div>
-            </div>
+    <div id="pollActionCard" class="card">
+      <div class="issues-actions">
+
+        <div class="header-container header-container-fixed">
+          <div>
+            <img src="./assets/actions.png">
+          </div>
+          <div>
+            <h2 id="pollHeader" class="header">Poll Actions</h2>
           </div>
         </div>
 
+        <div id="issue-info-actions" class="issue-info-actions">
+          <div id="poll-title-container" class="poll-title-container">
+            <span id="poll-title"></span>
+          </div>
+          <div id="poll-time-container" class="poll-time-container">
+            <span id="poll-time"></span>
+          </div>
+        </div>
+
+        <div id="poll-settings-actions" class="issue-settings-actions"></div>
+
+      </div>
+      <div>
+        <div class="dark-btn backBtn">
+          <span>Back</span>
+        </div>
+      </div>
+    </div>
 
     <!------------------------------------------ Wallet ------------------------------------------>
 
@@ -194,7 +254,7 @@
             <span id="account-balance"></span>
           </div>
           <div class="wallet-key-holder">
-            <span class="wallet-desc">Public key:</span>
+            <span class="wallet-desc">Public address:</span>
             <span id="public-key"></span>
           </div>
           <div class="wallet-key-holder">
@@ -236,15 +296,36 @@
       <span>Loading data...</span>
     </div>
 
-
   </div>
 
+  <script src="entities/poll.entity.js"></script>
+  <script src="entities/issue.entity.js"></script>
+  <script src="entities/user.entity.js"></script>
 
   <script src="web3.min.js"> </script>
-  <script src="helper.js"></script>
-  <script src="contract.js"></script>
-  <script src="github.js"></script>
-  <script src="blockchain.js"></script>
+
+  <script src="services/github.service.js"></script>
+  <script src="services/helper.service.js"></script>
+  <script src="services/contract.service.js"></script>
+  <script src="services/issue.service.js"></script>
+  <script src="services/poll.service.js"></script>
+  <script src="services/wallet.service.js"></script>
+  <script src="services/advance.start.service.js"></script>
+
+  <script src="component/poll.component.js"></script>
+  <script src="component/issue.component.js"></script>
+  <script src="component/submit.request.modal.js"></script>
+  <script src="component/voting.modal.js"></script>
+  <script src="component/bounty.component.js"></script>
+
+  <script src="page/repository.settings.page.js"></script>
+  <script src="page/issue.list.page.js"></script>
+  <script src="page/issue.action.page.js"></script>
+  <script src="page/poll.list.page.js"></script>
+  <script src="page/poll.action.page.js"></script>
+
+
+
   <script src="popup.js"></script>
   <script src="tab.js"></script>
 </body>

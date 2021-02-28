@@ -12,6 +12,11 @@ body {
     grid-template-columns: 35% 1fr;
 }
 
+.header-container-fixed-2 {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
 .header-container-variable {
     display: grid;
     grid-template-columns: 15% 1fr;
@@ -22,11 +27,13 @@ body {
     font-size: 20px;
     float: left;
     margin-left: 20px;
+    display: block;
+    padding-top: 7.5px;
 }
 
 .header-container > div > img {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     float: right;
     display: block;
     padding-top: 17px;
@@ -78,9 +85,9 @@ span {
 
 .login-container {
     width: 100%;
-    height: 100%;
+    height: 300px;
     display: grid;
-    grid-template-rows: 15% 1fr 30%;
+    grid-template-rows: 15% 1fr 20%;
 }
 
 .login-warning {
@@ -119,7 +126,7 @@ span {
 
 .repository-element {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 1fr;
     background: #24292e;
     color: white;
     width: 80%;
@@ -135,7 +142,73 @@ span {
     padding-top: 12px;
 }
 
-.repository-element > div {
+/* ------------------------ ISSUE CONTEXT ---------------------------- */
+
+.issues-actions {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 2fr 4fr 15%;
+}
+
+.issue-info-actions {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.issue-info-actions > div {
+    text-align: center;
+}
+
+.issue-title-container > span {
+    color: #24292e;
+    font-size: 20px;
+}
+
+.issue-stake-container > span {
+    color: #4aec2f;
+    font-size: 17px;
+}
+
+.issue-settings-actions {
+    width: 100%;
+    height: 200px;
+}
+
+.issues-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12.5% 1fr 15%;
+}
+
+.issues-list {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.issue-element {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background: #24292e;
+    color: white;
+    width: 80%;
+    height: 40px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.issue-element > span {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 12px;
+}
+
+.issue-element > div {
     border-radius: 50%;
     background: #e11f1f;
     width: 60%;
@@ -143,6 +216,30 @@ span {
     padding-top: 9px;
     margin-top: 4px;
     display: block;
+}
+
+/* ------------------------ POLL CONTEXT ---------------------------- */
+
+.repository-settings-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12.5% 1fr 15%;
+}
+
+.repository-settings-actions {
+    width: 100%;
+    height: 300px;
+}
+
+.poll-title-container > span {
+    color: #24292e;
+    font-size: 20px;
+}
+
+.poll-time-container > span {
+    color: #e11f1f;
+    font-size: 17px;
 }
 
 /* ------------------------ POLL CONTEXT ---------------------------- */
@@ -162,120 +259,6 @@ span {
 
 .poll-element {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 35% 1fr;
-    background: #24292e;
-    color: white;
-    width: 90%;
-    height: 60px;
-    margin: 5px auto;
-    border-radius: 10px;
-}
-
-.poll-date {
-    grid-area: 1 / 1 / 2 / 3;
-    text-align: left;
-    display: block;
-    padding-left: 20px;
-    color: #ff6464;
-}
-
-.poll-date > span {
-    display: block;
-    padding-top: 2.5px;
-}
-
-.poll-name {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.poll-name > span {
-    display: block;
-    padding-top: 7.5px;
-}
-
-.poll-buttons {
-    grid-area: 2 / 2 / 3 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 5px;
-}
-
-.poll-buttons > div {
-    width: 80%;
-    height: 80%;
-    border-radius: 5px;
-    margin-top: 3px;
-}
-
-.poll-buttons > div > img {
-    width: 20px;
-    height: 20px;
-    display: block;
-    margin: 0px auto;
-    padding-top: 7px;
-}
-
-.poll-voting {
-    grid-area: 2 / 2 / 3 / 3;
-    display: grid;
-    grid-template-columns: 50% 1fr 1fr;
-    row-gap: 5px;
-}
-
-.poll-voting > div {
-    width: 80%;
-    height: 80%;
-    border-radius: 5px;
-    margin-top: 3px;
-}
-
-.poll-voting > div > img {
-    width: 20px;
-    height: 20px;
-    display: block;
-    margin: 0px auto;
-    padding-top: 7px;
-}
-
-.poll-voting > input {
-    height: 60%;
-    width: 80%;
-    margin: 4px auto;
-}
-
-.accept-button {
-    background: #4aec2f;
-    color: white;
-}
-
-.decline-button {
-    background: #e11f1f;
-    color: white;
-}
-
-.link-button {
-    background: #999e98;
-    color: white;
-}
-
-/* ------------------------ Pollable CONTEXT ---------------------------- */
-
-.pollable-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 15% 1fr 20%;
-}
-
-.pollable-list {
-    width: 100%;
-    height: 300px;
-    overflow-y: scroll;
-}
-
-.pollable-element {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     background: #24292e;
     color: white;
@@ -285,12 +268,12 @@ span {
     border-radius: 10px;
 }
 
-.pollable-element > div > span {
+.poll-element > div > span {
     display: block;
     padding-top: 20px;
 }
 
-.pollable-element > div > div {
+.poll-element > div > div {
     width: 70%;
     height: 50%;
     margin: 15px auto;
@@ -298,7 +281,7 @@ span {
     border-radius: 5px;
 }
 
-.pollable-element > div > div > span {
+.poll-element > div > div > span {
     display: block;
     padding-top: 7.5px;
 }
@@ -429,11 +412,13 @@ span {
     margin: 25px auto;
 }
 
+/* ------------------------ Overlay  ---------------------------- */
+
 .overlay {
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0);
@@ -448,6 +433,246 @@ span {
     display: block;
     padding-top: 40%;
 }
+
+/* ------------------------ Request Modal  ---------------------------- */
+
+.modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.modal > span {
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding-top: 40%;
+}
+
+
+.request-modal {
+    width: 80%;
+    height: 200px;
+
+    position: fixed;
+    z-index: 2;
+    top: 75px;
+    left: 40px;
+    background: white;
+
+    display: grid;
+    grid-template-rows: 30% 1fr 30%;
+}
+
+.modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 25% 25%;
+}
+
+.request-modal-body > input {
+    width: 80%;
+    display: block;
+    padding: 12px 20px;
+    margin: 8px auto;
+    box-sizing: border-box;
+}
+
+.modal-actions > #cancel-request-modal-btn {
+    grid-area: 1 / 2 / 2 / 3;
+    background: #24292e;
+    height: 30px;
+}
+
+#cancel-request-modal-btn > span {
+    padding-top: 8px;
+}
+
+.modal-actions > #submit-request-modal-btn {
+    grid-area: 1 / 3 / 2 / 4;
+    background: #24292e;
+    height: 30px;
+}
+
+#submit-request-modal-btn > span {
+    padding-top: 8px;
+}
+
+/* ------------------------ Voting Modal  ---------------------------- */
+
+.voting-modal {
+    width: 80%;
+    height: 275px;
+
+    position: fixed;
+    z-index: 2;
+    top: 60px;
+    left: 40px;
+    background: white;
+
+    display: grid;
+    grid-template-rows: 25% 1fr 30%;
+}
+
+.modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 25% 25%;
+}
+
+.voting-modal-body > input {
+    width: 80%;
+    display: block;
+    padding: 12px 20px;
+    margin: 8px auto;
+    box-sizing: border-box;
+}
+
+.modal-actions > #cancel-voting-modal-btn {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 30px;
+}
+
+#cancel-voting-modal-btn > span {
+    padding-top: 8px;
+}
+
+.modal-actions > #submit-voting-modal-btn {
+    grid-area: 1 / 3 / 2 / 4;
+    height: 30px;
+}
+
+#submit-voting-modal-btn > span {
+    padding-top: 8px;
+}
+
+
+/* ------------------------ Checkbox  ---------------------------- */
+
+/* The container */
+.container {
+    width: 65%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* ------------------------ Bounty Modal  ---------------------------- */
+
+.bounty-modal {
+    width: 80%;
+    height: 275px;
+
+    position: fixed;
+    z-index: 2;
+    top: 60px;
+    left: 40px;
+    background: white;
+
+    display: grid;
+    grid-template-rows: 25% 1fr 30%;
+}
+
+.modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 25% 25%;
+}
+
+.bounty-modal-body > input {
+    width: 80%;
+    display: block;
+    padding: 12px 20px;
+    margin: 8px auto;
+    box-sizing: border-box;
+}
+
+.modal-actions > #cancel-bounty-modal-btn {
+    grid-area: 1 / 2 / 2 / 3;
+    background: #24292e;
+    height: 30px;
+}
+
+#cancel-bounty-modal-btn > span {
+    padding-top: 8px;
+}
+
+.modal-actions > #submit-bounty-modal-btn {
+    grid-area: 1 / 3 / 2 / 4;
+    background: #24292e;
+    height: 30px;
+}
+
+#submit-bounty-modal-btn > span {
+    padding-top: 8px;
+}
+
 
 .card {
     display: none;
