@@ -55,8 +55,10 @@ function initLayout() {
 
         openNewView(document.getElementById("menuCard"));
         
-        await initAdvancedStart();
-    
+        if(getPrivateKey()) {
+            await initAdvancedStart();
+        }
+
         hideLoader();
 
     }).catch(err => {
@@ -98,25 +100,30 @@ document.getElementById("gotoWalletBtn").addEventListener("click", function () {
 document.getElementById("gotoRepoBtn").addEventListener("click", async function () {
     showLoader();
 
-    let balance = await web3.eth.getBalance(getPublicKey());
-    if (balance > 100000000000000000) {
-        let repositories = await getRequest('https://api.github.com/users/' + user.getUsername() + '/starred');
-
-        while (reposList.firstChild) {
-            reposList.removeChild(reposList.lastChild);
-        }
-
-        if (!repositories['message']) {
-            openNewView(document.getElementById("repoCard"));
-            repositories.forEach(repository => {
-                UIappendRepo(repository);
-            });
+    if(getPublicKey()) {
+        let balance = await web3.eth.getBalance(getPublicKey());
+        if (balance > 100000000000000000) {
+            let repositories = await getRequest('https://api.github.com/users/' + user.getUsername() + '/starred');
+    
+            while (reposList.firstChild) {
+                reposList.removeChild(reposList.lastChild);
+            }
+    
+            if (!repositories['message']) {
+                openNewView(document.getElementById("repoCard"));
+                repositories.forEach(repository => {
+                    UIappendRepo(repository);
+                });
+            } else {
+                alert("Bad credentials (developer token) or no access to this data!")
+            }
         } else {
-            alert("Bad credentials (developer token) or no access to this data!")
+            hideLoader();
+            alert("Your account balance is under 0.1 ETH, please add more ETH to your balance!");
         }
     } else {
         hideLoader();
-        alert("Your account balance is under 0.1 ETH, please add more ETH to your balance!");
+        alert("No wallet found, please generate a wallet under 'Wallet'.");
     }
 
     hideLoader();

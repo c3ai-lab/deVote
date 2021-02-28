@@ -1,5 +1,5 @@
- const client_id = "Iv1.07743fea85c47be2";
- const client_secret = "8136df7bf962a19ff7557759974e86669ce121a9";
+ const client_id = "Iv1.48dd44f0ab0fee0b";
+ const client_secret = "6d2f0159ff909a8cc68c622dd1b92624f4922599";
 
 //const client_id = "Iv1.6b86b6e53dd67414";
 //const client_secret = "8c4eabc09c8b2bc504b50b795c7f8308453650c6";

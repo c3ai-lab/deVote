@@ -1,20 +1,3 @@
-/* 1. Holle alle Polls aus dem Poll-Manager
-2. Filtere nach Polls wo die Voting-Zeit < Jetzt ist
-3. ForEach Poll
-    1. Wurde eine PQ eingereicht?
-        1. Nein
-            1. Bounty wieder eröffnen
-            2. Pfand des Developers in die Bounty packen
-        2. Ja
-            1. Alle votes auswerten
-                1. Pros haben Mehrheit
-                    1. Loser stakest an Developer und Pro Staker (20 / 80) verteilen
-                    2. Bounty an Developer senden
-                2. Contra haben „Mehrheit“
-                    1. Loser stake geht (100) an die Contra Staker 
-                    2. Bounty wieder eröffnen
-                    3. Pfand des Developers in die Bounty */
-
 /**
 * Init the starting evaluation process for the poll process
 *
