@@ -4,7 +4,7 @@ deVote is a browser extension for decentralized voting of pull requests in GitHu
 
 ## Documentation
 
-A detailed documentation about deVote its functionalities, workflows and states can be found under the *Wiki*-Tab. It is highly suggested to read it before any development to understand the current state of the application.
+A detailed documentation about deVote and its functionalities, workflows and states can be found under the *Wiki*-Tab. It is highly suggested to read the wiki pages and to understand how the application works.
 
 ## Architecture
 
@@ -21,7 +21,7 @@ The browser extension is under *implementation/extension*. You can add them to t
 
 ### GitHub OAuth
 
-deVote uses GitHub OAuth to authenticate a GitHub account. In order to use GitHub's OAuth, the app must be registered under your own account. The procedure for this process can be found under [GitHub OAuth Documentation](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps).
+deVote uses GitHub OAuth to authenticate an GitHub account. In order to use GitHub's OAuth, the app must be registered under your own account. The procedure for this process can be found under [GitHub OAuth Documentation](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps).
 After the registration of the app, you will get the client_id and client_secret. Copy them and update the variables *client_id* and *client_secret* with your app properties. After this, you need to update the *Callback URL* in the settings of your GitHub-App. The *Callback URL* should have the following structure
 *https://[EXTENSION-ID].chromiumapp.org/provider_cb*. **This is only for testing purpose, you should not reveal your client_id and client_secret! One option would be to use something like a nodeJS service, that holds this sensible information and has an endpoint (REST) that redirects to the Callback-URL.
 
@@ -34,7 +34,7 @@ Important system requirements are:
 * [NodeJS](https://nodejs.org/) - JavaScript runtime for the npm packages
 * [truffle](https://github.com/trufflesuite/truffle) - development environment framework for Ethereum
 
-The following descriptions will explain how the manager contract can be deployed and how the bytecode for the poll contracts can be extracted. The extracted bytecode is required for deployment of the poll contract through deVote. If the solidity smart contract changes the bytecode needs to be updated.
+The following descriptions will explain how the manager contract can be deployed and how the bytecode for the poll contracts can be extracted. The extracted bytecode is required for the deployment of the poll contract through deVote. If the solidity smart contract changes the bytecode needs to be updated.
 
 **Deploy the manager contract**
 
