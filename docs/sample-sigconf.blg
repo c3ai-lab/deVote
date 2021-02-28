@@ -192,7 +192,6 @@ Warning--empty booktitle in linux2021ops
 Warning--empty publisher in linux2021ops
 Warning--empty address in linux2021ops
 Warning--page numbers missing in both pages and numpages fields in linux2021ops
-Warning--empty year in ulrich2020dev
 Warning--no journal in ulrich2020dev
 Warning--no number and no volume in ulrich2020dev
 Warning--page numbers missing in both pages and numpages fields in ulrich2020dev
@@ -200,43 +199,43 @@ Warning--no number and no volume in zhou2019bounties
 Warning--page numbers missing in both pages and numpages fields in zhou2019bounties
 You've used 21 entries,
             5959 wiz_defined-function locations,
-            1564 strings with 19031 characters,
-and the built_in function-call counts, 17713 in all, are:
-= -- 1404
+            1565 strings with 19035 characters,
+and the built_in function-call counts, 17784 in all, are:
+= -- 1422
 > -- 253
 < -- 0
 + -- 98
 - -- 92
-* -- 1224
+* -- 1225
 := -- 1344
 add.period$ -- 92
 call.type$ -- 21
 change.case$ -- 100
 chr.to.int$ -- 12
-cite$ -- 251
-duplicate$ -- 2040
-empty$ -- 1523
+cite$ -- 250
+duplicate$ -- 2052
+empty$ -- 1529
 format.name$ -- 104
-if$ -- 4443
+if$ -- 4455
 int.to.chr$ -- 11
 int.to.str$ -- 1
 missing$ -- 101
 newline$ -- 287
 num.names$ -- 64
-pop$ -- 1573
+pop$ -- 1557
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 178
 quote$ -- 0
-skip$ -- 472
+skip$ -- 482
 stack$ -- 0
-substring$ -- 733
+substring$ -- 757
 swap$ -- 100
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 520
-warning$ -- 187
+warning$ -- 186
 while$ -- 62
 width$ -- 0
 write$ -- 428
-(There were 187 warnings)
+(There were 186 warnings)

@@ -282,13 +282,13 @@
 \shownote{[Online; Retrieved 20.02.2021].}
 
 
-\bibitem[\protect\citeauthoryear{Ulrich}{Ulrich}{[n.d.]}]%
+\bibitem[\protect\citeauthoryear{Ulrich}{Ulrich}{2020}]%
         {ulrich2020dev}
 \bibfield{author}{\bibinfo{person}{Torben Ulrich}.}
-  \bibinfo{year}{[n.d.]}\natexlab{}.
+  \bibinfo{year}{2020}\natexlab{}.
 \newblock \showarticletitle{Development of a blockchain based access control
   protocol for GitHub repositories as open-source project.}
-\newblock  (\bibinfo{year}{[n.\,d.]}).
+\newblock  (\bibinfo{year}{2020}).
 \newblock
 
 

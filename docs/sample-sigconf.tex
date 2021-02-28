@@ -77,7 +77,7 @@ With the development of new technologies such as blockchain, new possibilities a
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
 \keywords{Open-source development, Open source, Software development, Development initiative,
-		Browser extension, Chrome extension, GitHub, Blockchain, Ethereum, Smart contracts}
+		Browser extension, Chrome extension, GitHub, Blockchain, Ethereum, Smart Contracts}
 
 %%
 %% This command processes the author and affiliation and title
@@ -93,14 +93,14 @@ community develops software publicly and transparently. Open-source development 
 of innovative and free software through the collaboration of many people and it also provides free access 
 to the software for everyone \cite{shaikh2017governing, redhat2021ops}. Some examples for such significant 
 projects are the Linux Kernel \cite{linux2021ops} and the Mozilla Firefox browser \cite{mozilla2021ops}, which are 
-used by many people  every day. A particular difficulty in open-source development is the coordination of the many 
+used by millions of people every day. A particular difficulty in open-source development is the coordination of the many 
 developers who contribute to the development of the projects with their own ideas or improvements. Sometimes a 
 change contains an error, therefore each change has
 to be tracked, traced, and if necessary reversed   \cite{shaikh2017governing}. These problems occur not only in open 
 source development, but also in normal software development. As in normal software development, version control is 
 used to solve these problems \cite{shaikh2017governing, ulrich2020dev}. \\ \\
 In particular, the version control protocol Git 
-is ideally for open-source development, because with Git it is possible to have several distributed remotes that can 
+is ideal for open-source development, because with Git it is possible to have several distributed remotes that can 
 access and manage the same source code \cite{git2021scm, ulrich2020dev}. Projects that are coordinated via Git are 
 called repositories. The developers have a local copy of the repository on their systems and can push their changes to or 
 pull the current status from the main repository. These actions are coordinated via a so-called Git server, which has to be 
@@ -114,9 +114,9 @@ number of the largest and most important open-source repositories \cite{git2021s
 Normally, an open-source project on GitHub starts with a user creating a repository for it. The user who created the 
 repository is the owner of it. This user has full control over the repository and can push changes, decide which changes are 
 accepted (merged) and even delete the repository. In addition, he can add so-called collaborators to the repository, who have 
-read and write rights in the repository \cite{git2021rights}. Normal users who do not have collaboration rights can contribute to 
+read and write privileges in the repository \cite{git2021rights}. Normal users who do not have collaboration rights can contribute to 
 the open-source project by creating a pull request with their change. Another user with the necessary rights can then decide 
-whether the change is useful or not. Depending on his decision, he can merge (accept) or reject (reject) the changes. 
+whether the change is useful or not. Depending on his decision, he can merge (accept) or reject the changes. 
 The described process is the typical approach to how the community develops for an open-source project.
 
 
@@ -141,7 +141,7 @@ financial incentive for the community. Using the Ethereum Blockchain, the commun
 merged or rejected. The aim is to merge good requests and reject bad ones by rewarding good decisions and punishing bad ones. 
 In addition, the community can 
 use a crowdfunding mechanism to pool Ether, the native currency of the Ethereum blockchain, to pay developers for solving problems 
-or bugs. This creates a free market with Ether as its currency where supply and demand form an initiative for solving the tasks. The functioning of the protocol on which the browser extension is based is explained in detail in \textit{3. Protocol}. Our goal with
+or bugs. This creates a free market with Ether as its currency where supply and demand form an initiative for solving the tasks. The functionality of the protocol on which the browser extension is based is explained in detail in \textit{3. Protocol}. Our goal with
  this browser extension and this paper is to solve the problems mentioned and to improve the way open-source development 
 is done.
 
@@ -152,7 +152,7 @@ a repository always belongs to an ownerless protocol and that pull requests can 
 via this protocol. This should prevent the danger that users with writing rights misuse them \cite{ulrich2020dev}. \\ \\
 Furthermore trustless and decentralised voting on the blockchain is a topic that has been addressed in several papers 
 and which also plays a critical role in this paper \cite{khoury2018decentralized, ulrich2020dev}. \\ \\
-In addition, the lack of financial incentive to implement problems or changes in a open-source repository is an issue that 
+In addition, the lack of financial incentive to implement problem fixes or changes in a open-source repository is an issue that 
 has been researched. The research looked at what is important to the developer who solves the bounty and what is 
 important to the financial backer of 
 the bounty. \cite{zhou2019bounties}
@@ -264,7 +264,7 @@ back into the claiming phase.
 \section{Implementation}
 The implementation of the chrome browser extension consists of a frontend and the in \textit{3. Protocol} described protocol.
 In this section, the technical implementation of the two components will be explained. Furthermore, for information purposes, 
-when the protocol is discussed, the second version of the protocol is meant.
+when the protocol is discussed, it is referring to the second version of the protocol.
 The mentioned chrome extension frontend has been created according to the current standard with HTML, CSS, JavaScript 
 and the Chrome extension API \cite{chrome2021api}. In summary, the chrome extension was developed as a kind of web application 
 with a few specific limitations. On the other hand, the development and implementation of the protocol required much more thought.
@@ -325,7 +325,7 @@ For these reasons, we see two aspects that need to be explored in future work. T
 open-source developers and community members feel about this decentralised development approach and what they think about such
  things as blockchain and transaction fees. The second aspect would be to research whether a server-client architecture is more 
 suitable for this application, as was done in the work \textit{Development of a blockchain based access control protocol for 
-GitHub repositories as open-Source project} \cite{ulrich2020dev}. One possibility would be to adapt the server to the requirements
+GitHub repositories as open-source project} \cite{ulrich2020dev}. One possibility would be to adapt the server to the requirements
 of the browser extension and connect the extension to it. This could be researched to see if this approach leads to better reliability 
 and solves some of our described weaknesses.
 

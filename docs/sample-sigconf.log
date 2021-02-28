@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  22 FEB 2021 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  22 FEB 2021 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,11 +1368,11 @@ Package rerunfilecheck Info: File `sample-sigconf.out' has not changed.
 (rerunfilecheck)             Checksum: 5D6B947D7F5D8D5776958AC561A9C227;1740.
  ) 
 Here is how much of TeX's memory you used:
- 19709 strings out of 492616
- 299654 string characters out of 6129481
- 457441 words of memory out of 5000000
+ 19712 strings out of 492616
+ 299729 string characters out of 6129481
+ 457439 words of memory out of 5000000
  22803 multiletter control sequences out of 15000+600000
- 139341 words of font info for 247 fonts, out of 8000000 for 9000
+ 139614 words of font info for 249 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,13n,94p,837b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
@@ -1393,7 +1393,7 @@ al/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/lo
 cal/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texl
 ive/2019/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on sample-sigconf.pdf (5 pages, 597437 bytes).
+Output written on sample-sigconf.pdf (5 pages, 597440 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  220 compressed objects within 3 object streams
