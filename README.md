@@ -97,3 +97,5 @@ In addition to [@sebastiangajek´s](https://github.com/sebastiangajek) help and 
 * [Using Web3.js to Deploy Smart Contracts on Moonbeam](https://docs.moonbeam.network/getting-started/local-node/web3-js/web3-contract/)
 * [Install and manage extensions](https://support.google.com/chrome_webstore/answer/2664769?hl=en)
 * [Managing OAuth Apps](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps)
+
+Human-Icons are open-source and from [undraw]( https://undraw.co/) 
