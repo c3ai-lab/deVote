@@ -226,6 +226,12 @@
             display: grid;
             grid-template-rows: 1fr 20% 30%;
 
+            img {
+                width: 250px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
             div {
                 text-align: center;
 
@@ -431,9 +437,7 @@
                 }
             }
         }
-
     }
-    
 }
 
 /* ----------------------------------------------------------------
@@ -443,7 +447,6 @@
 ---------------------------------------------------------------- */
 
 @media (min-width: 1400px) and (max-width: 1500px) {
-
     .page-content {
         padding-top: 110px;
         width: 100%;
@@ -511,7 +514,6 @@
     .page-header {
         grid-template-columns: 7.5% 25% 1fr 25% 7.5%;
     }
-
 }
 
 @media (min-height: 1024px) and (max-height: 1366px) and (orientation: portrait) {
@@ -522,7 +524,6 @@
     .fixed-scroll-header {
         height: 80px !important;
     }
-
 
     .deVote-container {
         grid-template-columns: 1fr !important;
@@ -578,11 +579,9 @@
     .page-deVote-footer {
         grid-template-columns: 25% 1fr 20% 20% !important;
     }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
     .page-content {
         height: 2800px;
     }
@@ -594,7 +593,6 @@
     .fixed-scroll-header {
         height: 80px !important;
     }
-
 
     .deVote-container {
         grid-template-columns: 1fr !important;
@@ -625,7 +623,7 @@
         }
 
         .deVote-screenshot {
-            left: 375px !important;
+            left: 325px !important;
             top: 500px !important;
         }
     }
@@ -650,8 +648,100 @@
     .page-deVote-footer {
         grid-template-columns: 25% 1fr 20% 20% !important;
     }
+}
 
+@media only screen and (min-height: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .page-content {
+        height: 2800px;
+    }
 
+    .page-header {
+        grid-template-columns: 5% 15% 55% 5%;
+    }
+
+    .fixed-scroll-header {
+        height: 80px !important;
+    }
+
+    .deVote-container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 30% 1fr !important;
+        height: calc(100vh + 125px) !important;
+
+        span {
+            font-size: 18px;
+            text-align: center !important;
+        }
+
+        div {
+            .deVote-text-holder {
+                height: 350px;
+                width: 95% !important;
+                padding-top: 5%;
+                margin: 0 auto !important;
+                float: none;
+
+                .deVote-main-text {
+                    font-size: 35px;
+                }
+
+                .deVote-description {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .deVote-screenshot {
+            left: 250px !important;
+            top: 500px !important;
+        }
+    }
+
+    .page-deVote-features {
+        width: 95%;
+        grid-template-rows: 15% 1fr;
+
+        .deVote-features-body {
+            .deVote-feature-element {
+                img {
+                    width: 200px;
+                    height: 150px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .page-deVote-benefits {
+        width: 95%;
+        height: 500px;
+        grid-template-rows: 15% 1fr;
+
+        .deVote-benefits-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+
+            .deVote-benefits-column {
+                .deVote-benefits-element {
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    .page-deVote-integrate {
+        width: 95%;
+        margin: 250px auto;
+    }
+
+    .page-deVote-footer {
+        height: 200px;
+    }
+
+    .page-deVote-footer {
+        grid-template-columns: 25% 1fr 20% 20% !important;
+    }
 }
 
 /* ----------------------------------------------------------------
@@ -661,21 +751,22 @@
 ---------------------------------------------------------------- */
 
 @media only screen and (min-width: 414px) and (max-width: 768px) and (orientation: portrait) {
-    
     .page-content {
         height: 2800px;
     }
 
     .page-header {
-        grid-template-columns: 5% 15% 60% 5%;
+        grid-template-columns: 5% 15% 55% 5%;
     }
 
+    .fixed-scroll-header {
+        height: 80px !important;
+    }
 
     .deVote-container {
         grid-template-columns: 1fr !important;
         grid-template-rows: 30% 1fr !important;
         height: calc(100vh + 125px) !important;
-        width: 100%;
 
         span {
             font-size: 18px;
@@ -684,39 +775,70 @@
 
         div {
             .deVote-text-holder {
-                height: 250px;
+                height: 550px;
                 width: 95% !important;
                 padding-top: 5%;
                 margin: 0 auto !important;
                 float: none;
 
                 .deVote-main-text {
-                    font-size: 30px;
+                    font-size: 35px;
                 }
 
                 .deVote-description {
-                    font-size: 20px;
+                    font-size: 25px;
                 }
             }
         }
 
         .deVote-screenshot {
-            left: 375px !important;
-            top: 500px !important;
+            left: 50px !important;
+            top: 650px !important;
         }
     }
 
     .page-deVote-features {
         width: 95%;
+        height: 800px;
+        grid-template-rows: 15% 1fr;
+
+        .deVote-features-body {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 50px;
+
+            .deVote-feature-element {
+                img {
+                    width: 200px;
+                    height: 150px;
+                    margin: 0 auto;
+                }
+            }
+        }
     }
 
     .page-deVote-benefits {
         width: 95%;
+        height: 800px;
+        grid-template-rows: 15% 1fr;
+
+        .deVote-benefits-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+
+            .deVote-benefits-column {
+                .deVote-benefits-element {
+                    height: 220px;
+                }
+            }
+        }
     }
 
     .page-deVote-integrate {
         width: 95%;
-        margin: 250px auto;
+        height: 250px;
+        margin: 450px auto;
     }
 
     .page-deVote-footer {
@@ -724,6 +846,6 @@
     }
 
     .page-deVote-footer {
-        grid-template-columns: 25% 1fr 20% 20% !important;
+        grid-template-columns: 25% 1% 1fr 1fr !important;
     }
 }
