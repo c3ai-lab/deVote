@@ -11,7 +11,11 @@ function initAdvancedStart() {
             if (parseInt(polls[i]['pqId']) && (getCurrentDate() > polls[i]['votingTimestamp'])) {
                 let eval = await evaluateVotes(polls[i]);
                 await resolvePoll(eval['result'], eval['winnerStake'], eval['allStakes'], polls[i]);
-                await setPollStateInManager(polls[i]['id'], 0);
+                await setPollStateInManager(polls[i]['id'], 1);
+
+                if(eval['result']) {
+                    await receiveBounty(polls[i]["poll_contract_address"]);
+                }
             } else {
                 if (polls[i]['state'] == 1 && (getCurrentDate() > polls[i]['bountyTimestamp'])) {
                     await resetToBountyToStart(polls[i]);
@@ -213,6 +217,36 @@ function transferFunds(address, index, value, delegate) {
     });
 }
 
+/**
+* Transfer the bounty to the successful developer
+*
+* @param {string} address - Receiver address
+* @return {Promise<any>} - Process finished
+*/
+function receiveBounty(address) {
+    return new Promise(async (resolve, reject) => {
+
+        let single_poll_contract = new web3.eth.Contract(poll_contract_abi, address);
+        single_poll_contract.methods.receiveBounty().estimateGas({ from: getPublicKey() }).then(gas => {
+
+            const tx = {
+                from: getPublicKey(),
+                to: address,
+                contractAddress: address,
+                gas: gas,
+                data: single_poll_contract.methods.receiveBounty().encodeABI()
+            };
+
+            const signPromise = web3.eth.accounts.signTransaction(tx, getPrivateKey());
+
+            signPromise.then(async (signedTx) => {
+                const sentTx = await web3.eth.sendSignedTransaction(signedTx.raw || signedTx.rawTransaction);
+                console.log("Bounty was transfered to the developer!");
+                resolve(sentTx);
+            }).catch(error => reject(error));
+        }).catch(error => reject(error));
+    });
+}
 
 /**
 * Transfer funds / stakes

@@ -65,6 +65,10 @@ contract Poll {
         bounties[index].staker.transfer(stake);
     }
 
+    function receiveBounty() public payable {
+        claimerAddress.transfer(bounty);
+    }
+
     function addBounty(address payable addr, uint256 value) public payable {
         bounties.push(
             Bounty({id: bounties.length, staker: addr, weight: value})
