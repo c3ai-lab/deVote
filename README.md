@@ -101,4 +101,4 @@ In addition to [@sebastiangajek´s](https://github.com/sebastiangajek) help and 
 * [Install and manage extensions](https://support.google.com/chrome_webstore/answer/2664769?hl=en)
 * [Managing OAuth Apps](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps)
 
-Human-Icons are open-source and from [undraw]( https://undraw.co/) 
+Human-Icons are open-source and from [undraw]( https://undraw.co/).
