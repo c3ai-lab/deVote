@@ -1,0 +1,241 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: deVote-paper.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: sample-base.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in git2021scm
+Warning--no author, editor, organization, or key in git2021scm
+Warning--to sort, need author or key in git2021scm
+Warning--no key, author in git2021hub
+Warning--no author, editor, organization, or key in git2021hub
+Warning--to sort, need author or key in git2021hub
+Warning--no key, author in git2021stars
+Warning--no author, editor, organization, or key in git2021stars
+Warning--to sort, need author or key in git2021stars
+Warning--no key, author in git2021rights
+Warning--no author, editor, organization, or key in git2021rights
+Warning--to sort, need author or key in git2021rights
+Warning--no key, author in git2021api
+Warning--no author, editor, organization, or key in git2021api
+Warning--to sort, need author or key in git2021api
+Warning--no key, author in eth2021contracts
+Warning--no author, editor, organization, or key in eth2021contracts
+Warning--to sort, need author or key in eth2021contracts
+Warning--no key, author in eth2021doc
+Warning--no author, editor, organization, or key in eth2021doc
+Warning--to sort, need author or key in eth2021doc
+Warning--no key, author in chrome2021api
+Warning--no author, editor, organization, or key in chrome2021api
+Warning--to sort, need author or key in chrome2021api
+Warning--no key, author in web32021js
+Warning--no author, editor, organization, or key in web32021js
+Warning--to sort, need author or key in web32021js
+Warning--no key, author in git2021auth
+Warning--no author, editor, organization, or key in git2021auth
+Warning--to sort, need author or key in git2021auth
+Warning--no key, author in eth2021scan
+Warning--no author, editor, organization, or key in eth2021scan
+Warning--to sort, need author or key in eth2021scan
+Warning--no key, author in eth2021fees
+Warning--no author, editor, organization, or key in eth2021fees
+Warning--to sort, need author or key in eth2021fees
+Warning--no key, author in eth2021sokol
+Warning--no author, editor, organization, or key in eth2021sokol
+Warning--to sort, need author or key in eth2021sokol
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--no key, author in chrome2021api
+Warning--no key, author in chrome2021api
+Warning--no key, author in eth2021fees
+Warning--no key, author in eth2021fees
+Warning--no key, author in eth2021scan
+Warning--no key, author in eth2021doc
+Warning--no key, author in eth2021contracts
+Warning--no key, author in eth2021sokol
+Warning--no key, author in git2021scm
+Warning--no key, author in git2021scm
+Warning--no key, author in git2021hub
+Warning--no key, author in git2021api
+Warning--no key, author in git2021stars
+Warning--no key, author in git2021auth
+Warning--no key, author in git2021rights
+Warning--no key, author in web32021js
+Warning--no key, author in web32021js
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in chrome2021api
+Warning--no author, editor, organization, or key in chrome2021api
+Warning--empty author in chrome2021api
+Warning--empty year in chrome2021api
+Warning--empty booktitle in chrome2021api
+Warning--empty publisher in chrome2021api
+Warning--empty address in chrome2021api
+Warning--page numbers missing in both pages and numpages fields in chrome2021api
+Warning--no key, author in eth2021fees
+Warning--no author, editor, organization, or key in eth2021fees
+Warning--empty author in eth2021fees
+Warning--empty year in eth2021fees
+Warning--empty booktitle in eth2021fees
+Warning--empty publisher in eth2021fees
+Warning--empty address in eth2021fees
+Warning--page numbers missing in both pages and numpages fields in eth2021fees
+Warning--no key, author in eth2021scan
+Warning--no author, editor, organization, or key in eth2021scan
+Warning--empty author in eth2021scan
+Warning--empty year in eth2021scan
+Warning--empty booktitle in eth2021scan
+Warning--empty publisher in eth2021scan
+Warning--empty address in eth2021scan
+Warning--page numbers missing in both pages and numpages fields in eth2021scan
+Warning--no key, author in eth2021doc
+Warning--no author, editor, organization, or key in eth2021doc
+Warning--empty author in eth2021doc
+Warning--empty year in eth2021doc
+Warning--empty booktitle in eth2021doc
+Warning--empty publisher in eth2021doc
+Warning--empty address in eth2021doc
+Warning--page numbers missing in both pages and numpages fields in eth2021doc
+Warning--no key, author in git2021scm
+Warning--no author, editor, organization, or key in git2021scm
+Warning--empty author in git2021scm
+Warning--empty year in git2021scm
+Warning--empty booktitle in git2021scm
+Warning--empty publisher in git2021scm
+Warning--empty address in git2021scm
+Warning--page numbers missing in both pages and numpages fields in git2021scm
+Warning--no key, author in git2021hub
+Warning--no author, editor, organization, or key in git2021hub
+Warning--empty author in git2021hub
+Warning--empty year in git2021hub
+Warning--empty booktitle in git2021hub
+Warning--empty publisher in git2021hub
+Warning--empty address in git2021hub
+Warning--page numbers missing in both pages and numpages fields in git2021hub
+Warning--no key, author in git2021api
+Warning--no author, editor, organization, or key in git2021api
+Warning--empty author in git2021api
+Warning--empty year in git2021api
+Warning--empty booktitle in git2021api
+Warning--empty publisher in git2021api
+Warning--empty address in git2021api
+Warning--page numbers missing in both pages and numpages fields in git2021api
+Warning--no key, author in git2021stars
+Warning--no author, editor, organization, or key in git2021stars
+Warning--empty author in git2021stars
+Warning--empty year in git2021stars
+Warning--empty booktitle in git2021stars
+Warning--empty publisher in git2021stars
+Warning--empty address in git2021stars
+Warning--page numbers missing in both pages and numpages fields in git2021stars
+Warning--no key, author in eth2021contracts
+Warning--no author, editor, organization, or key in eth2021contracts
+Warning--empty author in eth2021contracts
+Warning--empty year in eth2021contracts
+Warning--empty booktitle in eth2021contracts
+Warning--empty publisher in eth2021contracts
+Warning--empty address in eth2021contracts
+Warning--page numbers missing in both pages and numpages fields in eth2021contracts
+Warning--no key, author in git2021auth
+Warning--no author, editor, organization, or key in git2021auth
+Warning--empty author in git2021auth
+Warning--empty year in git2021auth
+Warning--empty booktitle in git2021auth
+Warning--empty publisher in git2021auth
+Warning--empty address in git2021auth
+Warning--page numbers missing in both pages and numpages fields in git2021auth
+Warning--no key, author in git2021rights
+Warning--no author, editor, organization, or key in git2021rights
+Warning--empty author in git2021rights
+Warning--empty year in git2021rights
+Warning--empty booktitle in git2021rights
+Warning--empty publisher in git2021rights
+Warning--empty address in git2021rights
+Warning--page numbers missing in both pages and numpages fields in git2021rights
+Warning--no key, author in eth2021sokol
+Warning--no author, editor, organization, or key in eth2021sokol
+Warning--empty author in eth2021sokol
+Warning--empty year in eth2021sokol
+Warning--empty booktitle in eth2021sokol
+Warning--empty publisher in eth2021sokol
+Warning--empty address in eth2021sokol
+Warning--page numbers missing in both pages and numpages fields in eth2021sokol
+Warning--no key, author in web32021js
+Warning--no author, editor, organization, or key in web32021js
+Warning--empty author in web32021js
+Warning--empty year in web32021js
+Warning--empty booktitle in web32021js
+Warning--empty publisher in web32021js
+Warning--empty address in web32021js
+Warning--page numbers missing in both pages and numpages fields in web32021js
+Warning--empty year in mozilla2021ops
+Warning--empty booktitle in mozilla2021ops
+Warning--empty publisher in mozilla2021ops
+Warning--empty address in mozilla2021ops
+Warning--page numbers missing in both pages and numpages fields in mozilla2021ops
+Warning--empty year in ioriheartbleed
+Warning--no journal in ioriheartbleed
+Warning--no number and no volume in ioriheartbleed
+Warning--page numbers missing in both pages and numpages fields in ioriheartbleed
+Warning--empty publisher in khoury2018decentralized
+Warning--empty address in khoury2018decentralized
+Warning--empty year in redhat2021ops
+Warning--empty booktitle in redhat2021ops
+Warning--empty publisher in redhat2021ops
+Warning--empty address in redhat2021ops
+Warning--page numbers missing in both pages and numpages fields in redhat2021ops
+Warning--empty year in linux2021ops
+Warning--empty booktitle in linux2021ops
+Warning--empty publisher in linux2021ops
+Warning--empty address in linux2021ops
+Warning--page numbers missing in both pages and numpages fields in linux2021ops
+Warning--no journal in ulrich2020dev
+Warning--no number and no volume in ulrich2020dev
+Warning--page numbers missing in both pages and numpages fields in ulrich2020dev
+Warning--no number and no volume in zhou2019bounties
+Warning--page numbers missing in both pages and numpages fields in zhou2019bounties
+You've used 21 entries,
+            5959 wiz_defined-function locations,
+            1565 strings with 19031 characters,
+and the built_in function-call counts, 17784 in all, are:
+= -- 1422
+> -- 253
+< -- 0
++ -- 98
+- -- 92
+* -- 1225
+:= -- 1344
+add.period$ -- 92
+call.type$ -- 21
+change.case$ -- 100
+chr.to.int$ -- 12
+cite$ -- 250
+duplicate$ -- 2052
+empty$ -- 1529
+format.name$ -- 104
+if$ -- 4455
+int.to.chr$ -- 11
+int.to.str$ -- 1
+missing$ -- 101
+newline$ -- 287
+num.names$ -- 64
+pop$ -- 1557
+preamble$ -- 1
+purify$ -- 178
+quote$ -- 0
+skip$ -- 482
+stack$ -- 0
+substring$ -- 757
+swap$ -- 100
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 520
+warning$ -- 186
+while$ -- 62
+width$ -- 0
+write$ -- 428
+(There were 186 warnings)

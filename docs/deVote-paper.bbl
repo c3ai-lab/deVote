@@ -1,0 +1,308 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{21}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{??}{chr}{[n.d.]}]%
+        {chrome2021api}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{Chrome API Reference}.
+\newblock
+\urldef\tempurl%
+\url{https://developer.chrome.com/docs/extensions/reference/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]a}]%
+        {eth2021fees}
+ \bibinfo{year}{[n.d.]}\natexlab{a}.
+\newblock \showarticletitle{Ethereum Avg. Transaction Fee historical chart}.
+\newblock
+\urldef\tempurl%
+\url{https://bitinfocharts.com/de/comparison/ethereum-transactionfees.html}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]b}]%
+        {eth2021scan}
+ \bibinfo{year}{[n.d.]}\natexlab{b}.
+\newblock \showarticletitle{Ethereum Daily Transactions Chart}.
+\newblock
+\urldef\tempurl%
+\url{https://etherscan.io/chart/tx}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]c}]%
+        {eth2021doc}
+ \bibinfo{year}{[n.d.]}\natexlab{c}.
+\newblock \showarticletitle{Ethereum developer resources}.
+\newblock
+\urldef\tempurl%
+\url{https://ethereum.org/en/developers/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]a}]%
+        {git2021scm}
+ \bibinfo{year}{[n.d.]}\natexlab{a}.
+\newblock \showarticletitle{Git scm}.
+\newblock
+\urldef\tempurl%
+\url{https://git-scm.com/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]b}]%
+        {git2021hub}
+ \bibinfo{year}{[n.d.]}\natexlab{b}.
+\newblock \showarticletitle{GitHub about}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]c}]%
+        {git2021api}
+ \bibinfo{year}{[n.d.]}\natexlab{c}.
+\newblock \showarticletitle{GitHub REST API}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.github.com/en/rest}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]d}]%
+        {git2021stars}
+ \bibinfo{year}{[n.d.]}\natexlab{d}.
+\newblock \showarticletitle{Gitstar Ranking}.
+\newblock
+\urldef\tempurl%
+\url{https://gitstar-ranking.com/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]d}]%
+        {eth2021contracts}
+ \bibinfo{year}{[n.d.]}\natexlab{d}.
+\newblock \showarticletitle{Introduction to smart contracts}.
+\newblock
+\urldef\tempurl%
+\url{https://ethereum.org/en/developers/docs/smart-contracts/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]e}]%
+        {git2021auth}
+ \bibinfo{year}{[n.d.]}\natexlab{e}.
+\newblock \showarticletitle{Managing OAuth Apps}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.github.com/en/developers/apps/managing-oauth-apps}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{git}{[n.d.]f}]%
+        {git2021rights}
+ \bibinfo{year}{[n.d.]}\natexlab{f}.
+\newblock \showarticletitle{Permission levels for a user account repository}.
+\newblock
+\urldef\tempurl%
+\url{https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{eth}{[n.d.]e}]%
+        {eth2021sokol}
+ \bibinfo{year}{[n.d.]}\natexlab{e}.
+\newblock \showarticletitle{Sokol blockexplorer}.
+\newblock
+\urldef\tempurl%
+\url{https://blockscout.com/poa/sokol/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 22.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{??}{web}{[n.d.]}]%
+        {web32021js}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{web3.js - Ethereum JavaScript API}.
+\newblock
+\urldef\tempurl%
+\url{https://web3js.readthedocs.io/en/v1.3.0/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{Docs}{Docs}{[n.d.]}]%
+        {mozilla2021ops}
+\bibfield{author}{\bibinfo{person}{MDN~Web Docs}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{Contributing to the Mozilla code base}.
+\newblock
+\urldef\tempurl%
+\url{https://developer.mozilla.org/en-US/docs/Mozilla/Developer\_guide/Introduction}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{Iori}{Iori}{[n.d.]}]%
+        {ioriheartbleed}
+\bibfield{author}{\bibinfo{person}{Melissa Iori}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{Heartbleed Keeps Flowing-Open Source Security}.
+\newblock  (\bibinfo{year}{[n.\,d.]}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Khoury, Kfoury, Kassem, and Harb}{Khoury
+  et~al\mbox{.}}{2018}]%
+        {khoury2018decentralized}
+\bibfield{author}{\bibinfo{person}{David Khoury}, \bibinfo{person}{Elie~F
+  Kfoury}, \bibinfo{person}{Ali Kassem}, {and} \bibinfo{person}{Hamza Harb}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Decentralized voting platform based on ethereum
+  blockchain}. In \bibinfo{booktitle}{\emph{2018 IEEE International
+  Multidisciplinary Conference on Engineering Technology (IMCET)}}. IEEE,
+  \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Redhat}{Redhat}{[n.d.]}]%
+        {redhat2021ops}
+\bibfield{author}{\bibinfo{person}{Redhat}.} \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{What is open source?}
+\newblock
+\urldef\tempurl%
+\url{https://www.redhat.com/en/topics/open-source/what-is-open-source}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{Shaikh and Henfridsson}{Shaikh and
+  Henfridsson}{2017}]%
+        {shaikh2017governing}
+\bibfield{author}{\bibinfo{person}{Maha Shaikh} {and} \bibinfo{person}{Ola
+  Henfridsson}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Governing open source software through coordination
+  processes}.
+\newblock \bibinfo{journal}{\emph{Information and Organization}}
+  \bibinfo{volume}{27}, \bibinfo{number}{2} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{116--135}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{torvalds}{torvalds}{[n.d.]}]%
+        {linux2021ops}
+\bibfield{author}{\bibinfo{person}{torvalds}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{GitHub repository of the linux kernel}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/torvalds/linux}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; Retrieved 20.02.2021].}
+
+
+\bibitem[\protect\citeauthoryear{Ulrich}{Ulrich}{2020}]%
+        {ulrich2020dev}
+\bibfield{author}{\bibinfo{person}{Torben Ulrich}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Development of a blockchain based access control
+  protocol for GitHub repositories as open-source project.}
+\newblock  (\bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhou, Wang, Bezemer, Zou, and Hassan}{Zhou
+  et~al\mbox{.}}{2019}]%
+        {zhou2019bounties}
+\bibfield{author}{\bibinfo{person}{Jiayuan Zhou}, \bibinfo{person}{Shaowei
+  Wang}, \bibinfo{person}{Cor-Paul Bezemer}, \bibinfo{person}{Ying Zou}, {and}
+  \bibinfo{person}{Ahmed~E Hassan}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Bounties in open source development on github: A
+  case study of bountysource bounties}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1904.02724}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\end{thebibliography}
