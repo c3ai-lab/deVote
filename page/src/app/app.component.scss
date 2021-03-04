@@ -7,7 +7,7 @@
 /* ----------------------- Header design ----------------------- */
 
 .page-header {
-    height: 110px;
+    height: calc(100vh / 10);
     width: 100%;
     position: fixed;
     transition: background 0.4s ease, height 0.4s ease;
@@ -35,8 +35,8 @@
     }
 
     img {
-        height: 50px;
-        width: 50px;
+        height: 60%;
+        width: 50%;
         display: block;
         margin: 0 auto;
         padding-top: 15px;
@@ -44,7 +44,7 @@
 }
 
 .fixed-scroll-header {
-    height: 70px !important;
+    height: calc(100vh / 15) !important;
 
     box-shadow: 0 2px 6px 0 rgb(0 0 0 / 7%);
     background: rgba(255, 255, 255);
@@ -54,7 +54,9 @@
     }
 
     img {
-        padding-top: 7.5px !important;
+        padding-top: calc(100vh / 100) !important;
+        height: 60%;
+        width: 40%;
     }
 
     z-index: 5;
@@ -113,8 +115,8 @@
 
     div {
         .deVote-text-holder {
-            width: 530px;
-            height: 350px;
+            width: calc(100vw / 3);
+            height: calc(100vh / 3);
             display: grid;
             grid-template-rows: 35% 1fr 30%;
             text-align: center;
@@ -122,11 +124,11 @@
             padding-top: 25%;
 
             .deVote-main-text {
-                font-size: 40px;
+                font-size: calc(100vw / 50);
             }
 
             .deVote-description {
-                font-size: 25px;
+                font-size: calc(100vw / 80);
                 opacity: 0.7;
             }
         }
@@ -134,10 +136,10 @@
 
     .deVote-screenshot {
         position: absolute;
-        width: 358px;
-        height: 442px;
-        left: 1200px;
-        top: 221px;
+        width: calc(100vw / 4);
+        height: calc(100vh / 2);
+        left: calc(100vw / 1.75);
+        top: calc(100vh / 5);
 
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
@@ -147,8 +149,8 @@
 
 .deVote-documentation-button {
     div {
-        width: 225px;
-        height: 45px;
+        width: calc(100vw / 6);
+        height: calc(100vh / 28);
         background: #3880ff;
         opacity: 0.8;
         border-radius: 20px;
@@ -159,7 +161,8 @@
         span {
             color: white;
             display: block;
-            padding-top: 13px;
+            padding-top: calc(100vh / 150);
+            font-size: calc(100vh / 60);
         }
 
         &:hover {
@@ -200,9 +203,9 @@
 }
 
 .page-deVote-features {
-    height: 425px;
+    height: calc(100vh / 2);
     display: grid;
-    width: 50%;
+    width: 80%;
     margin: 225px auto;
     grid-template-rows: 25% 1fr;
 
@@ -213,7 +216,7 @@
             color: #093d8d;
             font-family: "Montserrat", "Raleway", sans-serif;
             opacity: 0.8;
-            font-size: 35px;
+            font-size: calc(100vh / 30);
         }
     }
 
@@ -227,8 +230,8 @@
             grid-template-rows: 1fr 20% 30%;
 
             img {
-                width: 250px;
-                height: 200px;
+                width: calc(100vw / 6);
+                height: calc(100vh / 5);
                 margin: 0 auto;
             }
 
@@ -243,16 +246,16 @@
 
             .devote-feature-element-header {
                 span {
-                    font-size: 20px;
+                    font-size: calc(100vh / 48);
                     display: block;
-                    padding-top: 20px;
+                    padding-top: calc(100vh / 48);
                 }
             }
 
             .devote-feature-element-body {
                 span {
                     opacity: 0.8;
-                    font-size: 16px;
+                    font-size: calc(100vh / 60);
                 }
             }
         }
@@ -260,11 +263,11 @@
 }
 
 .page-deVote-benefits {
-    height: 425px;
+    height: calc(100vh / 2);
     display: grid;
-    width: 50%;
+    width: 80%;
     margin: 225px auto;
-    grid-template-rows: 25% 1fr;
+    grid-template-rows: 15% 1fr;
 
     .deVote-benefits-header {
         text-align: center;
@@ -273,7 +276,7 @@
             color: #093d8d;
             font-family: "Montserrat", "Raleway", sans-serif;
             opacity: 0.8;
-            font-size: 35px;
+            font-size: calc(100vh / 28);
         }
     }
 
@@ -292,7 +295,7 @@
                     color: #093d8d;
                     font-family: "Montserrat", "Raleway", sans-serif;
                     opacity: 0.8;
-                    font-size: 30px;
+                    font-size: calc(100vh / 32);
                 }
             }
 
@@ -327,7 +330,7 @@
                     grid-area: 1 / 2 / 3 / 3;
 
                     span {
-                        font-size: 20px;
+                        font-size: calc(100vh / 54);
                     }
                 }
 
@@ -336,7 +339,7 @@
 
                     span {
                         opacity: 0.8;
-                        font-size: 15px;
+                        font-size: calc(100vh / 60);
                     }
                 }
             }
@@ -345,21 +348,21 @@
 }
 
 .page-deVote-integrate {
-    height: 125px;
+    height: calc(100vh / 6);
     display: grid;
-    width: 50%;
+    width: 80%;
     margin: 350px auto;
     grid-template-rows: 35% 1fr 10%;
 
     .page-deVote-integrate-header {
         span {
-            font-size: 25px;
+            font-size: calc(100vh / 30);
         }
     }
 
     .page-deVote-integrate-body {
         span {
-            font-size: 20px;
+            font-size: calc(100vh / 45);
             opacity: 0.8;
         }
     }
@@ -375,19 +378,20 @@
 
     .deVote-documentation-button {
         div {
-            width: 200px;
-            height: 35px;
+            width: calc(100vw / 6);
+            height: calc(100vh / 25);
 
             span {
-                padding-top: 8px;
+                padding-top: calc(100vh / 130);
                 color: white;
+                font-size: calc(100vh / 50);
             }
         }
     }
 }
 
 .page-deVote-footer {
-    height: 200px;
+    height: calc(100vh / 5);
     display: grid;
     width: 100%;
     margin: 0 auto;
@@ -414,7 +418,7 @@
 
         .deVote-footer-header {
             span {
-                font-size: 20px;
+                font-size: calc(100vh / 40);
                 display: block;
                 padding-top: 20px;
             }
@@ -427,7 +431,7 @@
 
             span {
                 opacity: 0.8;
-                font-size: 16px;
+                font-size: calc(100vh / 60);
                 display: block;
                 padding-top: 15px;
                 cursor: pointer;
@@ -451,6 +455,13 @@
         padding-top: 110px;
         width: 100%;
         height: 3000px;
+    }
+
+    .page-header {
+        img {
+            height: 40px;
+            width: 40px;
+        }
     }
 
     .deVote-screenshot {
@@ -483,8 +494,18 @@
         height: 2800px;
     }
 
-    .deVote-screenshot {
-        left: 750px !important;
+    .page-header {
+        img {
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+    }
+
+    .fixed-scroll-header {
+        height: calc(100vh / 11) !important;
     }
 
     .page-deVote-features {
@@ -514,11 +535,54 @@
     .page-header {
         grid-template-columns: 7.5% 25% 1fr 25% 7.5%;
     }
+
+    .fixed-scroll-header {
+        height: calc(100vh / 14) !important;
+    }
+
+    .deVote-container {
+        div {
+            .deVote-text-holder {
+                height: calc(100vh / 2.5);
+
+                .deVote-main-text {
+                    font-size: calc(100vw / 40);
+                }
+
+                .deVote-description {
+                    font-size: calc(100vw / 60);
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .deVote-screenshot {
+            position: absolute;
+            width: calc(100vw / 3);
+            height: calc(100vh / 2);
+            left: calc(100vw / 1.75);
+            top: calc(100vh / 5);
+        }
+    }
 }
 
 @media (min-height: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+
+    .page-content {
+        height: 4500px;
+    }
+
     .page-header {
-        grid-template-columns: 5% 15% 50% 5%;
+        grid-template-columns: 5% 15% 50% 15%;
+    }
+
+    .fixed-scroll-header {
+        height: calc(100vh / 15) !important;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
     }
 
     .fixed-scroll-header {
@@ -528,20 +592,15 @@
     .deVote-container {
         grid-template-columns: 1fr !important;
         grid-template-rows: 30% 1fr !important;
-        height: calc(100vh - 325px) !important;
-
-        span {
-            font-size: 18px;
-            text-align: center !important;
-        }
+        height: calc(100vh - 900px) !important;
 
         div {
             .deVote-text-holder {
-                height: 250px;
+                height: 350px;
                 width: 95% !important;
-                padding-top: 5%;
+                padding-top: 15%;
                 margin: 0 auto !important;
-                float: none;
+                grid-template-rows: 25% 40% 1fr;
 
                 .deVote-main-text {
                     font-size: 35px;
@@ -554,8 +613,23 @@
         }
 
         .deVote-screenshot {
-            left: 375px !important;
-            top: 500px !important;
+            left: 25% !important;
+            top: calc(100vh / 2.25) !important;
+            height: calc(100vh / 2);
+            width: calc(100vw / 1.75);
+        }
+    }
+
+    .deVote-documentation-button {
+        div {
+            width: calc(100vw / 3);
+            height: calc(100vh / 28);
+        }
+    }
+
+    .page-scroll-notifier {
+        img {
+            margin: 200px auto;
         }
     }
 
@@ -564,12 +638,43 @@
     }
 
     .page-deVote-benefits {
+        grid-template-rows: 10% 1fr;
         width: 95%;
+        height: 800px;
+
+        .deVote-benefits-body {
+
+            .deVote-benefits-column {
+                .deVote-benefits-column-header {
+                    height: 40px;
+                }
+    
+                .deVote-benefits-element {
+                    height: 200px;
+                    /* width: 80%;
+                    margin: 50px auto; */
+                }
+            }
+        }
     }
 
     .page-deVote-integrate {
         width: 95%;
-        margin: 250px auto;
+        margin: 350px auto;
+        height: 400px;
+
+        .deVote-documentation-button {
+            div {
+                width: calc(100vw / 3);
+                height: calc(100vh / 20);
+    
+                span {
+                    padding-top: calc(100vh / 100);
+                    color: white;
+                    font-size: calc(100vh / 50);
+                }
+            }
+        }
     }
 
     .page-deVote-footer {
@@ -577,17 +682,26 @@
     }
 
     .page-deVote-footer {
-        grid-template-columns: 25% 1fr 20% 20% !important;
+        grid-template-columns: 25% 1fr 30% 30% !important;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .page-content {
-        height: 2800px;
+        height: 2500px;
     }
 
     .page-header {
-        grid-template-columns: 5% 15% 55% 5%;
+        grid-template-columns: 5% 12.5% 50% 15%;
+    }
+
+    .fixed-scroll-header {
+        height: calc(100vh / 15) !important;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
     }
 
     .fixed-scroll-header {
@@ -597,89 +711,15 @@
     .deVote-container {
         grid-template-columns: 1fr !important;
         grid-template-rows: 30% 1fr !important;
-        height: calc(100vh + 125px) !important;
-
-        span {
-            font-size: 18px;
-            text-align: center !important;
-        }
-
-        div {
-            .deVote-text-holder {
-                height: 250px;
-                width: 95% !important;
-                padding-top: 5%;
-                margin: 0 auto !important;
-                float: none;
-
-                .deVote-main-text {
-                    font-size: 35px;
-                }
-
-                .deVote-description {
-                    font-size: 25px;
-                }
-            }
-        }
-
-        .deVote-screenshot {
-            left: 325px !important;
-            top: 500px !important;
-        }
-    }
-
-    .page-deVote-features {
-        width: 95%;
-    }
-
-    .page-deVote-benefits {
-        width: 95%;
-    }
-
-    .page-deVote-integrate {
-        width: 95%;
-        margin: 250px auto;
-    }
-
-    .page-deVote-footer {
-        height: 200px;
-    }
-
-    .page-deVote-footer {
-        grid-template-columns: 25% 1fr 20% 20% !important;
-    }
-}
-
-@media only screen and (min-height: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    .page-content {
-        height: 2800px;
-    }
-
-    .page-header {
-        grid-template-columns: 5% 15% 55% 5%;
-    }
-
-    .fixed-scroll-header {
-        height: 80px !important;
-    }
-
-    .deVote-container {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 30% 1fr !important;
-        height: calc(100vh + 125px) !important;
-
-        span {
-            font-size: 18px;
-            text-align: center !important;
-        }
+        height: calc(100vh - 250px) !important;
 
         div {
             .deVote-text-holder {
                 height: 350px;
                 width: 95% !important;
-                padding-top: 5%;
+                padding-top: 15%;
                 margin: 0 auto !important;
-                float: none;
+                grid-template-rows: 25% 40% 1fr;
 
                 .deVote-main-text {
                     font-size: 35px;
@@ -690,44 +730,28 @@
                 }
             }
         }
+    }
 
-        .deVote-screenshot {
-            left: 250px !important;
-            top: 500px !important;
+    .deVote-documentation-button {
+        div {
+            width: calc(100vw / 3);
+            height: calc(100vh / 20);
+
+            span {
+                color: white;
+                display: block;
+                padding-top: calc(100vh / 150);
+                font-size: calc(100vh / 40);
+            }
         }
     }
 
     .page-deVote-features {
         width: 95%;
-        grid-template-rows: 15% 1fr;
-
-        .deVote-features-body {
-            .deVote-feature-element {
-                img {
-                    width: 200px;
-                    height: 150px;
-                    margin: 0 auto;
-                }
-            }
-        }
     }
 
     .page-deVote-benefits {
         width: 95%;
-        height: 500px;
-        grid-template-rows: 15% 1fr;
-
-        .deVote-benefits-body {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 20px;
-
-            .deVote-benefits-column {
-                .deVote-benefits-element {
-                    height: 120px;
-                }
-            }
-        }
     }
 
     .page-deVote-integrate {
@@ -743,6 +767,8 @@
         grid-template-columns: 25% 1fr 20% 20% !important;
     }
 }
+
+@media only screen and (min-height: 768px) and (max-height: 1024px) and (orientation: portrait) {}
 
 /* ----------------------------------------------------------------
 
@@ -756,7 +782,7 @@
     }
 
     .page-header {
-        grid-template-columns: 5% 15% 55% 5%;
+        grid-template-columns: 5% 15% 55% 15%;
     }
 
     .fixed-scroll-header {
@@ -766,7 +792,6 @@
     .deVote-container {
         grid-template-columns: 1fr !important;
         grid-template-rows: 30% 1fr !important;
-        height: calc(100vh + 125px) !important;
 
         span {
             font-size: 18px;
@@ -790,10 +815,19 @@
                 }
             }
         }
+    }
 
-        .deVote-screenshot {
-            left: 50px !important;
-            top: 650px !important;
+    .deVote-documentation-button {
+        div {
+            width: calc(100vw / 1.25);
+            height: calc(100vh / 17.5);
+
+            span {
+                color: white;
+                display: block;
+                padding-top: calc(100vh / 100);
+                font-size: calc(100vh / 40);
+            }
         }
     }
 
@@ -839,9 +873,24 @@
         width: 95%;
         height: 250px;
         margin: 450px auto;
+
+        .deVote-documentation-button {
+            div {
+                width: calc(100vw / 1.25);
+                height: calc(100vh / 17.5);
+    
+                span {
+                    color: white;
+                    display: block;
+                    padding-top: calc(100vh / 100);
+                    font-size: calc(100vh / 40);
+                }
+            }
+        }
     }
 
     .page-deVote-footer {
+        margin: 30px auto;
         height: 200px;
     }
 
