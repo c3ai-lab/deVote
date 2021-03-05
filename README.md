@@ -13,7 +13,7 @@ A detailed documentation about deVote and its functionalities, workflows and sta
 </p>
 
 
-## Development
+## Development & Installation
 
 ### Browser extension
 
@@ -23,7 +23,7 @@ The browser extension is under *implementation/extension*. You can add them to t
 
 deVote uses GitHub OAuth to authenticate an GitHub account. In order to use GitHub's OAuth, the app must be registered under your own account. The procedure for this process can be found under [GitHub OAuth Documentation](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps).
 After the registration of the app, you will get the client_id and client_secret. Copy them and update the variables *client_id* and *client_secret* with your app properties. After this, you need to update the *Callback URL* in the settings of your GitHub-App. The *Callback URL* should have the following structure
-*https://[EXTENSION-ID].chromiumapp.org/provider_cb*. **This is only for testing purposes, you should not reveal your client_id and client_secret! One option would be to use something like a nodeJS service, that holds this sensible information and has an endpoint (REST) that redirects to the Callback-URL.
+*https://[EXTENSION-ID].chromiumapp.org/provider_cb*. You can find the extension ID by clicking on details in the extensions settings. **This is only for testing purposes, you should not reveal your client_id and client_secret!** One option would be to use something like a nodeJS service, that holds this sensible information and has an endpoint (REST) that redirects to the Callback-URL.
 
 ### GitHub Developer token
 For some functionalities (merge/reject of pull requests) deVote needs access rights, which the normal OAuth token unfortunately does not offer, therefore the developer token must also be stored in the app, which is done via an user interface view. How to get the developer token can be found under ["Creating a personal access token"](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
