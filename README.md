@@ -19,6 +19,35 @@ A detailed documentation about deVote and its functionalities, workflows and sta
 
 The browser extension is under *implementation/extension*. You can add them to the chrome browser by going to the Extensions settings, clicking on *"Load unzipped extension"* in the upper left corner and selecting the path in the Explorer/Finder. You can find more information at [Install and manage extensions](https://support.google.com/chrome_webstore/answer/2664769?hl=en).
 
+### Blockchain settings
+
+deVote has been tested over the Ethereum testnet [sokol](https://blockscout.com/poa/sokol/), the network to use can be customized via the *truffle-config.js* by adjusting the URL.
+
+```javascript
+  networks: {
+    poa: {
+      provider: function () {
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          "https://sokol.poa.network")
+      },
+      network_id: 77,
+      gas: 4612388,
+      gasPrice: 1000000000
+    },
+    development: {
+      provider: function () {
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          "https://sokol.poa.network")
+      },
+      network_id: 77,
+      gas: 4612388,
+      gasPrice: 1000000000
+    }
+}
+```
+
 ### GitHub OAuth
 
 deVote uses GitHub OAuth to authenticate an GitHub account. In order to use GitHub's OAuth, the app must be registered under your own account. The procedure for this process can be found under [GitHub OAuth Documentation](https://docs.github.com/en/free-pro-team@latest/developers/apps/getting-started-with-apps).
