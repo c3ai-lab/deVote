@@ -2,6 +2,7 @@
     "name": "deVote",
     "version": "1.0",
     "description": "Voting Extension!",
+    "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmW61i5gPX8hEOOegdhDPifZOJ6y9G/wuJ4WD6lrJMBI5cH8ojM606Cd+kvZi1ia6/JGDZCDYL9LfzU1uXr9sE5jAftUE4E7BNx2C7ITdBwYaFUzrJfcUxtuO8yYAB5pgXheROJodvKmU85pesWe86GIT+p4eJu+1gtAZ9i8z0x2yNn/Tp8U5eCCM7aN9FXYbTpUmrVUT06sU1g6Jy2vrU1zm0GICQfWLozs1kHGtaLlhXvkhCOjqN8Mg3b08Q7archy0Nzxn5pStuQCacqXJcY4PGrR988dpFpHlgOXzzPBnYnokKI1KjsJAD0WBU3zA9JUN/P4S/Te6JwlgfBMvbQIDAQAB",
     "permissions": [
         "activeTab",
         "<all_urls>",
@@ -10,6 +11,10 @@
         "tabs",
         "identity"
     ],
+    "oauth2":{
+        "client_id":"1049477548857-4objulek8jsnp7nd41np5jjjuda46hij.apps.googleusercontent.com",
+        "scopes":["https://www.googleapis.com/auth/contacts.readonly"]
+    },
     "content_security_policy": "script-src 'self' 'unsafe-eval' ; object-src 'self'",
     "background": {
         "scripts": [
