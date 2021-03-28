@@ -135,6 +135,27 @@ for (let i = 0; i < backBtns.length; i++) {
     backBtns[i].addEventListener("click", function () { openNewView(document.getElementById("menuCard")) });
 }
 
+document.getElementById("repo-settings-back-btn").addEventListener("click", function() {
+    openNewView(document.getElementById("repoCard"));
+});
+
+document.getElementById("open-issues-back-btn").addEventListener("click", function() {
+    openNewView(document.getElementById("repoInfoCard"));
+});
+
+document.getElementById("open-polls-back-btn").addEventListener("click", function() {
+    openNewView(document.getElementById("repoInfoCard"));
+});
+
+document.getElementById("issues-actions-back-btn").addEventListener("click", function() {
+    openNewView(document.getElementById("issuesCard"));
+});
+
+document.getElementById("polls-actions-back-btn").addEventListener("click", function() {
+    openNewView(document.getElementById("pollsCard"));
+});
+
+
 // generic navigation function
 function openNewView(reference) {
     cardArray.forEach(element => {
@@ -175,6 +196,28 @@ async function genKeys() {
 
 document.getElementById("btn-gen-keys").addEventListener("click", () => {
     genKeys();
+});
+
+document.getElementById("btn-send-balance").addEventListener("click", () => {
+    generateSendBalanceModal();
+
+    document.getElementById("cancel-send-modal-btn").addEventListener("click", function () {
+        document.getElementById("send-modal").remove();
+    });
+
+    document.getElementById("submit-send-modal-btn").addEventListener("click", async function () {
+        showLoader();
+        let amount = document.getElementById("send-modal-staking-amount").value;
+        let receiver = document.getElementById("send-modal-staking-receiver").value;
+        let balance = await web3.eth.getBalance(getPublicKey());
+        if (amount && receiver && balance >= amount) {
+            await sendBalance(web3, amount, receiver);
+            document.getElementById("send-modal").remove();
+        } else {
+            alert("Invalid amount to send, insufficient balance or invald receiver address!")
+        }
+        hideLoader();
+    });
 })
 
 document.getElementById("save-btn").addEventListener("click", () => {

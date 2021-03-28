@@ -367,6 +367,14 @@ span {
     grid-template-rows: 15% 20% 1fr 12.5%;
 }
 
+.wallet-actions {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
 .wallet-key-holder {
     width: 90%;
     height: 35px;
@@ -548,6 +556,52 @@ span {
 }
 
 #submit-voting-modal-btn > span {
+    padding-top: 8px;
+}
+
+/* ------------------------ Send Modal  ---------------------------- */
+
+.send-modal {
+    width: 80%;
+    height: 275px;
+
+    position: fixed;
+    z-index: 2;
+    top: 60px;
+    left: 40px;
+    background: white;
+
+    display: grid;
+    grid-template-rows: 25% 1fr 30%;
+}
+
+.send-modal-body > input {
+    width: 80%;
+    display: block;
+    padding: 12px 20px;
+    margin: 8px auto;
+    box-sizing: border-box;
+}
+
+.modal-actions > #cancel-send-modal-btn {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 30px;
+}
+
+#cancel-send-modal-btn > span {
+    padding-top: 8px;
+}
+
+#submit-send-modal-btn > span {
+    padding-top: 8px;
+}
+
+.modal-actions > #submit-send-modal-btn {
+    grid-area: 1 / 3 / 2 / 4;
+    height: 30px;
+}
+
+#submit-voting-send-btn > span {
     padding-top: 8px;
 }
 

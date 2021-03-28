@@ -50,3 +50,34 @@ function initWalletWithGas(web3, from, to, private_key) {
         }).catch(error => reject(error));
     });
 }
+
+/**
+ * Faucet function to top up the accounts
+ *
+ * @param {Web3} web3 - Web3js object reference
+ * @param {string} amount - amount to send
+ * @param {string} to - receiver address
+ * @return {Promise<any>} - Blockchain response
+ */
+ function sendBalance(web3, amount, to) {
+    return new Promise((resolve, reject) => {
+        const tx = {
+            from: getPublicKey(),
+            to: to,
+            gas: 1287794,
+            value: amount
+        };
+
+        const signPromise = web3.eth.accounts.signTransaction(tx, getPrivateKey());
+
+        signPromise.then((signedTx) => {
+            const sentTx = web3.eth.sendSignedTransaction(signedTx.raw || signedTx.rawTransaction);
+            sentTx.on("receipt", receipt => {
+                resolve(receipt);
+            });
+            sentTx.on("error", err => {
+                reject(err);
+            });
+        }).catch(error => reject(error));
+    });
+}

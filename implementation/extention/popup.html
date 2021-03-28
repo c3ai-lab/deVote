@@ -115,7 +115,7 @@
         </div>
 
         <div>
-          <div class="dark-btn backBtn">
+          <div id="repo-settings-back-btn" class="dark-btn">
             <span>Back</span>
           </div>
         </div>
@@ -140,7 +140,7 @@
 
         </div>
         <div>
-          <div class="dark-btn backBtn">
+          <div id="open-issues-back-btn" class="dark-btn">
             <span>Back</span>
           </div>
         </div>
@@ -163,17 +163,17 @@
 
         <div id="issue-info-actions" class="issue-info-actions">
           <div id="issue-title-container" class="issue-title-container">
-            <span id="issue-title" class="issue-title">Hallo boys</span>
+            <span id="issue-title" class="issue-title">Text</span>
           </div>
           <div id="issue-stake-container" class="issue-stake-container">
-            <span id="issue-stake" class="issue-stake">Bounty: 0.11 ETH</span>
+            <span id="issue-stake" class="issue-stake">Bounty: 0 ETH</span>
           </div>
         </div>
 
         <div id="issue-settings-actions" class="issue-settings-actions"></div>
 
         <div>
-          <div class="dark-btn backBtn">
+          <div id="issues-actions-back-btn" class="dark-btn backBtn">
             <span>Back</span>
           </div>
         </div>
@@ -199,7 +199,7 @@
 
         </div>
         <div>
-          <div class="dark-btn backBtn">
+          <div id="open-polls-back-btn" class="dark-btn backBtn">
             <span>Back</span>
           </div>
         </div>
@@ -234,7 +234,7 @@
 
       </div>
       <div>
-        <div class="dark-btn backBtn">
+        <div id="polls-actions-back-btn" class="dark-btn backBtn">
           <span>Back</span>
         </div>
       </div>
@@ -245,8 +245,13 @@
     <div id="walletCard" class="card">
       <div class="wallet-container">
         <h2 class="header">Wallet</h2>
-        <div>
-          <button id="btn-gen-keys" class="dark-btn">Generate keys</button>
+        <div class="wallet-actions">
+          <div>
+            <button id="btn-gen-keys" class="dark-btn">Generate</button>
+          </div>
+          <div>
+            <button id="btn-send-balance" class="dark-btn">Send</button>
+          </div>
         </div>
         <div>
           <div class="wallet-key-holder">
@@ -316,6 +321,7 @@
   <script src="component/issue.component.js"></script>
   <script src="component/submit.request.modal.js"></script>
   <script src="component/voting.modal.js"></script>
+  <script src="component/send.balance.modal.js"></script>
   <script src="component/bounty.component.js"></script>
 
   <script src="page/repository.settings.page.js"></script>

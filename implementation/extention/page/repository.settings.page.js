@@ -6,38 +6,45 @@
  */
 async function initRepositorySettings(repository) {
     showLoader();
-    
+
     openNewView(document.getElementById("repoInfoCard"));
     const response = await getRequest('https://api.github.com/repos/' + repository['owner']['login'] + '/' + repository['name'] + '/collaborators');
 
-    user.setAdmin(
-        response.some(entry => entry['login'] == username) ?
-        response.find(entry => entry['login'] == username)['permissions']['admin']
-        : false
-    );
+    console.log(response);
 
-    // remove old buttons, to prevent multiple event firing
-    document.getElementById("showIssuesBtn").remove();
-    document.getElementById("showPullsBtn").remove();
+    if (!response['message']) {
+        user.setAdmin(
+            response.some(entry => entry['login'] == username) ?
+                response.find(entry => entry['login'] == username)['permissions']['admin']
+                : false
+        );
 
-    let container = document.getElementById("repository-settings-action");
+        // remove old buttons, to prevent multiple event firing
+        document.getElementById("showIssuesBtn").remove();
+        document.getElementById("showPullsBtn").remove();
 
-    let showIssuesBtnText = generateSpan("Issues", "");
-    let showIssuesBtn = generateDiv("dark-btn", "showIssuesBtn");
-    showIssuesBtn.addEventListener("click", function() {
-        initIssueList(repository);
-    });
+        let container = document.getElementById("repository-settings-action");
 
-    let showPullsBtnText = generateSpan("Polls", "");
-    let showPullsBtn = generateDiv("dark-btn", "showPullsBtn");
-    showPullsBtn.addEventListener("click", function () {
-        initPollList(repository);
-    });
+        let showIssuesBtnText = generateSpan("Issues", "");
+        let showIssuesBtn = generateDiv("dark-btn", "showIssuesBtn");
+        showIssuesBtn.addEventListener("click", function () {
+            initIssueList(repository);
+        });
 
-    showIssuesBtn.appendChild(showIssuesBtnText);
-    showPullsBtn.appendChild(showPullsBtnText);
-    container.appendChild(showIssuesBtn);
-    container.appendChild(showPullsBtn);
+        let showPullsBtnText = generateSpan("Polls", "");
+        let showPullsBtn = generateDiv("dark-btn", "showPullsBtn");
+        showPullsBtn.addEventListener("click", function () {
+            initPollList(repository);
+        });
+
+        showIssuesBtn.appendChild(showIssuesBtnText);
+        showPullsBtn.appendChild(showPullsBtnText);
+        container.appendChild(showIssuesBtn);
+        container.appendChild(showPullsBtn);
+    } else {
+        alert("No access rights!")
+        openNewView(document.getElementById("repoCard"));
+    }
 
     hideLoader();
 }
