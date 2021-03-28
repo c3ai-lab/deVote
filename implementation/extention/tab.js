@@ -6,20 +6,20 @@
 
 window.onload = function () {
 
-    document.querySelector('#github-btn').addEventListener('click', function () {
-        chrome.identity.launchWebAuthFlow({
-            'url': 'https://github.com/login/oauth/authorize?client_id=' + client_id + "&scope=repo", 'interactive': true
-        },
-            function (redirect_url) {
-                let urlParams = new URL(redirect_url.toString());
-                let code = urlParams.searchParams.get("code");
+    // document.querySelector('#github-btn').addEventListener('click', function () {
+    //     chrome.identity.launchWebAuthFlow({
+    //         'url': 'https://github.com/login/oauth/authorize?client_id=' + client_id + "&scope=repo", 'interactive': true
+    //     },
+    //         function (redirect_url) {
+    //             let urlParams = new URL(redirect_url.toString());
+    //             let code = urlParams.searchParams.get("code");
 
-                let request = new XMLHttpRequest();
-                request.onload = init;
-                request.open('post', 'https://github.com/login/oauth/access_token?client_id=' + client_id + '&client_secret=' + client_secret + '&code=' + code);
-                request.send();
-            });
-    });
+    //             let request = new XMLHttpRequest();
+    //             request.onload = init;
+    //             request.open('post', 'https://github.com/login/oauth/access_token?client_id=' + client_id + '&client_secret=' + client_secret + '&code=' + code);
+    //             request.send();
+    //         });
+    // });
 
 };
 
