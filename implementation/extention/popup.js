@@ -129,6 +129,30 @@ document.getElementById("gotoRepoBtn").addEventListener("click", async function 
     hideLoader();
 });
 
+document.getElementById('github-btn').addEventListener('click', function() { //OAUTH
+    console.log("clicker");
+    document.getElementById('github-btn').innerText="";
+      chrome.identity.getAuthToken({interactive: true}, function(token) {
+        console.log(token);
+        let init = {
+          method: 'GET',
+          async: true,
+          headers: {
+            Authorization: 'Bearer ' + token,
+            'Content-Type': 'application/json'
+          },
+          'contentType': 'json'
+        };
+        fetch(
+            'https://people.googleapis.com/v1/contactGroups/all?maxMembers=20&key=AIzaSyCk2zds5VhRddFurXM4d-35tvTYuPIEsLQ',
+            init)
+            .then((response) => response.json())
+            .then(function(data) {
+              console.log(data)
+              openNewView(document.getElementById("menuCard"))
+            });
+      });
+    });
 
 // go back to the last (currently first page of the extension)
 for (let i = 0; i < backBtns.length; i++) {
