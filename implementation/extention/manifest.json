@@ -9,11 +9,12 @@
         "declarativeContent",
         "storage",
         "tabs",
-        "identity"
+        "identity",
+        "https://github.com/login/oauth/authorize"
     ],
     "oauth2":{
         "client_id":"1049477548857-4objulek8jsnp7nd41np5jjjuda46hij.apps.googleusercontent.com",
-        "scopes":["https://www.googleapis.com/auth/contacts.readonly"]
+        "scopes":["https://github.com/login/oauth/authorize", "https://www.googleapis.com/auth/contacts.readonly"]
     },
     "content_security_policy": "script-src 'self' 'unsafe-eval' ; object-src 'self'",
     "background": {
