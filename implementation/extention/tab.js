@@ -1,5 +1,5 @@
- const client_id = "Iv1.48dd44f0ab0fee0b";
- const client_secret = "6d2f0159ff909a8cc68c622dd1b92624f4922599";
+ const client_id = "53824c185e10fbe0d3db";
+ const client_secret = "9626f6dd0ef2b07b003703cbf7bd55a2f7727f4d";
 
 //const client_id = "Iv1.6b86b6e53dd67414";
 //const client_secret = "8c4eabc09c8b2bc504b50b795c7f8308453650c6";
@@ -38,6 +38,7 @@ function init() {
         .then(res => {
             username = res['login'];
             user = new User(res['login'], '', false);
+            user.setToken(token);
 
             const account = web3.eth.accounts.privateKeyToAccount('0x' + private_key);
             web3.eth.accounts.wallet.add(account);

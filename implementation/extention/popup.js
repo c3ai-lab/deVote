@@ -36,7 +36,7 @@ function initLayout() {
     let keyMatrix = [
         { key: "pbk", id: "public-key", type: "span" },
         { key: "prk", id: "private-key", type: "span" },
-        { key: "token", id: "cred-token", type: "input" }
+        //{ key: "token", id: "cred-token", type: "input" }
     ];
 
     // sync the key and account data from the chrome storage
@@ -48,10 +48,10 @@ function initLayout() {
             document.getElementById("account-balance").textContent = (parseInt(balance) / (10 ** 18)) + " ETH";
         }
 
-        const developer_token = document.getElementById("cred-token").value;
+/*         const developer_token = document.getElementById("cred-token").value;
         if (developer_token) {
             user.setToken(developer_token)
-        }
+        } */
 
         openNewView(document.getElementById("menuCard"));
         
@@ -222,7 +222,7 @@ document.getElementById("btn-send-balance").addEventListener("click", () => {
 
 document.getElementById("save-btn").addEventListener("click", () => {
     showLoader();
-    developer_token = document.getElementById("cred-token").value;
+    //developer_token = document.getElementById("cred-token").value;
     chrome.storage.sync.set({ token: developer_token });
     user.setToken(developer_token);
     openNewView(document.getElementById("menuCard"));
